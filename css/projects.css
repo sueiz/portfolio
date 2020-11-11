@@ -1,0 +1,154 @@
+body {
+  background: #ff3636;
+  overflow: hidden;
+}
+
+header {
+  width: 100%;
+  height: 70px;
+}
+
+header div {
+  width: 90%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header div .headerLeft {
+  margin: 50px 0 0 0;
+  width: 20%;
+  position: relative;
+}
+
+header div .headerLeft::after {
+  content: '';
+  display: inline-block;
+  clear: both;
+}
+
+header div .headerLeft > a {
+  color: #e1e1e1;
+}
+
+header div .headerLeft > a::after {
+  content: '';
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  background: #ff3636;
+  border-radius: 100%;
+  position: absolute;
+  left: 30%;
+  top: 50%;
+  -webkit-transform: translate(-30%, -50%);
+          transform: translate(-30%, -50%);
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+
+header div .headerLeft > a:hover {
+  color: #555;
+}
+
+header div .headerLeft > a:hover::after {
+  -webkit-animation: circle 1s infinite;
+          animation: circle 1s infinite;
+}
+
+@-webkit-keyframes circle {
+  0% {
+    width: 8px;
+    height: 8px;
+  }
+  20% {
+    width: 9px;
+    height: 9px;
+  }
+  100% {
+    width: 6px;
+    height: 6px;
+  }
+}
+
+@keyframes circle {
+  0% {
+    width: 8px;
+    height: 8px;
+  }
+  20% {
+    width: 9px;
+    height: 9px;
+  }
+  100% {
+    width: 6px;
+    height: 6px;
+  }
+}
+
+header div .headerLeft .gnb {
+  float: right;
+}
+
+header div .headerLeft .gnb ul li {
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+header div .headerLeft .gnb ul li a:hover {
+  color: #ff3636;
+}
+
+header div .back_btn {
+  width: 0;
+  margin: 30px 0 0 0;
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+}
+
+header div .back_btn:hover a {
+  color: #fff;
+}
+
+header div .back_btn a {
+  font-family: 'integral_cfheavy';
+  color: #333;
+}
+
+main {
+  width: 100%;
+  margin: 10rem 5rem;
+}
+
+main .project_title {
+  -webkit-transform: rotate(-8deg);
+          transform: rotate(-8deg);
+}
+
+main .project_title h2 img {
+  display: none;
+}
+
+main .project_title h2:hover {
+  color: #fff;
+}
+
+main .project_title h2:hover img {
+  display: block;
+  position: absolute;
+  left: 40%;
+  top: 50%;
+  -webkit-transform: translate(-40%, -50%);
+          transform: translate(-40%, -50%);
+  z-index: -1;
+  opacity: .8;
+  border: 10px solid #fff;
+}
+/*# sourceMappingURL=projects.css.map */

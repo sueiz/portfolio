@@ -1,0 +1,424 @@
+header {
+  width: 100%;
+  height: 70px;
+}
+
+header div {
+  width: 90%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header div .headerLeft {
+  margin: 50px 0 0 0;
+  width: 20%;
+  position: relative;
+}
+
+header div .headerLeft::after {
+  content: '';
+  display: inline-block;
+  clear: both;
+}
+
+header div .headerLeft > a {
+  color: #e1e1e1;
+}
+
+header div .headerLeft > a::after {
+  content: '';
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  background: #ff3636;
+  border-radius: 100%;
+  position: absolute;
+  left: 30%;
+  top: 50%;
+  -webkit-transform: translate(-30%, -50%);
+          transform: translate(-30%, -50%);
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+
+header div .headerLeft > a:hover {
+  color: #555;
+}
+
+header div .headerLeft > a:hover::after {
+  -webkit-animation: circle 1s infinite;
+          animation: circle 1s infinite;
+}
+
+@-webkit-keyframes circle {
+  0% {
+    width: 8px;
+    height: 8px;
+  }
+  20% {
+    width: 9px;
+    height: 9px;
+  }
+  100% {
+    width: 6px;
+    height: 6px;
+  }
+}
+
+@keyframes circle {
+  0% {
+    width: 8px;
+    height: 8px;
+  }
+  20% {
+    width: 9px;
+    height: 9px;
+  }
+  100% {
+    width: 6px;
+    height: 6px;
+  }
+}
+
+header div .headerLeft .gnb {
+  float: right;
+}
+
+header div .headerLeft .gnb ul li {
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+header div .headerLeft .gnb ul li a:hover {
+  color: #ff3636;
+}
+
+header div .menu-trigger {
+  width: 26px;
+  height: 16px;
+  position: relative;
+  margin: 50px 0 0 0;
+}
+
+header div .menu-trigger span {
+  display: inline-block;
+  position: absolute;
+  width: 26px;
+  height: 2px;
+  background: #ff3636;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+header div .menu-trigger span:nth-of-type(1) {
+  top: 0%;
+}
+
+header div .menu-trigger span:nth-of-type(2) {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+header div .menu-trigger span:nth-of-type(3) {
+  top: 100%;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+.slide_menu {
+  width: 30%;
+  height: 100vh;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #fff;
+  z-index: 999;
+  display: none;
+}
+
+.slide_menu .inner {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.slide_menu .inner ul {
+  padding: 10rem 0 0 10rem;
+}
+
+.slide_menu .inner ul li {
+  position: relative;
+  display: block;
+  margin-top: 3rem;
+}
+
+.slide_menu .inner ul li::before {
+  display: block;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  position: absolute;
+  top: 20px;
+  left: -20px;
+  font-size: 0.7em;
+  text-align: right;
+  font-weight: 900;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.slide_menu .inner ul li:nth-of-type(1)::before {
+  content: '01';
+}
+
+.slide_menu .inner ul li:nth-of-type(2)::before {
+  content: '02';
+}
+
+.slide_menu .inner ul li:nth-of-type(3)::before {
+  content: '03';
+}
+
+.slide_menu .inner ul li a {
+  display: block;
+}
+
+.slide_menu .inner ul li a h4 {
+  text-align: left;
+  font-weight: 900;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 12px;
+  letter-spacing: 5px;
+}
+
+.slide_menu .inner .close_btn {
+  width: 26px;
+  height: 16px;
+  position: absolute;
+  left: 5%;
+  top: 60%;
+}
+
+.slide_menu .inner .close_btn span {
+  display: inline-block;
+  position: absolute;
+  width: 26px;
+  height: 2px;
+  background: #333;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.slide_menu .inner .close_btn span:nth-of-type(1) {
+  top: 50%;
+  -webkit-transform: translateY(0) rotate(-45deg);
+          transform: translateY(0) rotate(-45deg);
+}
+
+.slide_menu .inner .close_btn span:nth-of-type(2) {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transform: translateY(0) rotate(45deg);
+          transform: translateY(0) rotate(45deg);
+}
+
+main .about_wrap .inner .introduce h2, main .about_wrap .inner .skills h2 {
+  font-family: Biko, sans-serif;
+  font-weight: 900;
+  font-size: 3em;
+  color: #ff3636;
+  line-height: 2;
+}
+
+main .about_wrap .inner .introduce .education dt, main .about_wrap .inner .introduce .certificate dt, main .about_wrap .inner .skills ul li dl dt {
+  font: 200 1em/1.4 Montserrat;
+  font-weight: 100;
+  line-height: 1.5;
+  color: #555;
+  letter-spacing: 2px;
+}
+
+main {
+  width: 100%;
+}
+
+main .about_wrap {
+  width: 90%;
+  height: 85vh;
+  margin: 0 auto;
+  overflow: hidden;
+  border: 1px solid #e1e1e1;
+  position: relative;
+}
+
+main .about_wrap .inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+main .about_wrap .inner .vdo_mask {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  margin: 0 auto;
+  position: relative;
+  z-index: -2;
+}
+
+main .about_wrap .inner .vdo_mask .vdo_bg {
+  width: 100%;
+}
+
+main .about_wrap .inner .vdo_mask svg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+main .about_wrap .inner .vdo_mask svg text {
+  font-family: Biko, sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 70px;
+}
+
+main .about_wrap .inner .vdo_mask svg rect {
+  fill: #fff;
+}
+
+main .about_wrap .inner .vdo_mask svg > rect {
+  -webkit-mask: url(#mask);
+          mask: url(#mask);
+}
+
+main .about_wrap .inner .introduce {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  margin-left: 2rem;
+}
+
+main .about_wrap .inner .introduce h3 {
+  font-size: 1.5em;
+}
+
+main .about_wrap .inner .introduce p {
+  font-size: .9em;
+  line-height: 1.5;
+}
+
+main .about_wrap .inner .introduce .education dd, main .about_wrap .inner .introduce .certificate dd {
+  font-size: .9em;
+  line-height: 1.5;
+}
+
+main .about_wrap .inner .introduce .education dd::before, main .about_wrap .inner .introduce .certificate dd::before {
+  content: '';
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  background: #ff3636;
+  vertical-align: middle;
+  margin-right: 1rem;
+}
+
+main .about_wrap .inner .introduce .download {
+  margin: 0 auto;
+  -webkit-transition: .5s;
+  transition: .5s;
+  text-align: center;
+}
+
+main .about_wrap .inner .introduce .download a {
+  border: 1px solid #ff3636;
+  padding: .5rem 1rem;
+  -webkit-transition: .5s;
+  transition: .5s;
+  font-size: .7em;
+  text-align: center;
+}
+
+main .about_wrap .inner .introduce .download a:hover {
+  color: #fff;
+  background-color: #ff3636;
+}
+
+main .about_wrap .inner .skills {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+main .about_wrap .inner .skills ul li {
+  margin: 0 5% 5% 0;
+  width: 45%;
+}
+
+main .about_wrap .inner .skills ul li:nth-of-type(2n) {
+  margin-right: 0;
+}
+
+main .about_wrap .inner .skills ul li dl dd {
+  display: none;
+  font-size: .9em;
+}
+
+main .about_wrap .inner .skills ul li dl dd::before {
+  content: '';
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  background: #ff3636;
+  vertical-align: middle;
+  margin-right: 1rem;
+}
+
+main .about_wrap .line {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  z-index: -1;
+}
+
+main .about_wrap .line div {
+  -webkit-box-flex: 6;
+      -ms-flex: 6;
+          flex: 6;
+  width: 1px;
+  height: 100%;
+  border-right: 1px solid #e1e1e1;
+}
+
+main .about_wrap .line div:nth-of-type(1) {
+  border: none;
+}
+
+main .about_wrap .line div:nth-of-type(6) {
+  border: none;
+}
+/*# sourceMappingURL=index.css.map */

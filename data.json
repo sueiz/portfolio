@@ -1,0 +1,28 @@
+{
+    "project":[
+        {
+            "code":"project01",
+            "num":"1",
+            "tit":"KRISPY KREME DONUTS",
+            "description":"RESPONSIVE WEB",
+            "imgSrc":"img/project_krispy.jpg",
+            "url":"https://front.wemakeprice.com/deal/605312466"
+        },
+        {
+            "code":"project02",
+            "num":"2",
+            "tit":"YUHAN KIMBERLY",
+            "description":"RESPONSIVE WEB",
+            "imgSrc":"img/project_yuhankimberly.jpg",
+            "url":"https://front.wemakeprice.com/deal/605312466"
+        },
+        {
+            "code":"project03",
+            "num":"3",
+            "tit":"AT HOME WORKOUTS",
+            "description":"RESPONSIVE WEB",
+            "imgSrc":"img/project_workouts.jpg",
+            "url":"https://front.wemakeprice.com/deal/605312466"
+        }
+    ]
+}

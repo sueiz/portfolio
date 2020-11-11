@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
+/* * {font-family: 'Noto Sans KR', sans-serif;} */
+
+@import url('https://cdn.rawgit.com/openhiun/hangul/14c0f6faa2941116bb53001d6a7dcd5e82300c3f/nanumbarungothic.css');
+* {font-family: 'Nanum Barun Gothic', sans-serif;}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+.header_eng {
+    font-family: 'Montserrat', sans-serif;
+    font-size: .7em;
+    letter-spacing: -0.3px;
+    color: #555;
+}
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+.menu_eng {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 5em;
+    color: #333;
+}
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+.about_eng {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+@font-face {
+    font-family: Biko;
+    src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/biko-black.woff");
+}
+
+@font-face {
+    font-family: 'integral_cfheavy';
+    src: url('../css/font/integralcf-heavy-webfont.woff') format('woff2'),
+         url('../css/font/integralcf-heavy-webfont.woff2') format('woff');
+}
+.title_eng {
+    font-family: 'integral_cfheavy';
+    font-size: 7rem;
+    color: #ff3636;
+    letter-spacing: 5px;
+    text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+}
+
+html,body{
+    margin:0;
+}
+
+ul,li{
+    margin:0; padding:0;
+    list-style:none;
+}
+h1,h2,h3,h4,h5,h6,figure,figcaption,p,div {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+*{
+    color:#555;
+    letter-spacing: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+

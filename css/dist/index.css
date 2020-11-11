@@ -1,0 +1,304 @@
+header {
+  width: 100%;
+  height: 70px;
+}
+header div {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header div .headerLeft {
+  margin: 50px 0 0 0;
+  width: 20%;
+  position: relative;
+}
+header div .headerLeft::after {
+  content: "";
+  display: inline-block;
+  clear: both;
+}
+header div .headerLeft > a {
+  color: #e1e1e1;
+}
+header div .headerLeft > a::after {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  background: #ff3636;
+  border-radius: 100%;
+  position: absolute;
+  left: 30%;
+  top: 50%;
+  transform: translate(-30%, -50%);
+  transition: 1s ease-in-out;
+}
+header div .headerLeft > a:hover {
+  color: #555;
+}
+header div .headerLeft > a:hover::after {
+  animation: circle 1s infinite;
+}
+@keyframes circle {
+  0% {
+    width: 8px;
+    height: 8px;
+  }
+  20% {
+    width: 9px;
+    height: 9px;
+  }
+  100% {
+    width: 6px;
+    height: 6px;
+  }
+}
+header div .headerLeft .gnb {
+  float: right;
+}
+header div .headerLeft .gnb ul li {
+  display: inline-block;
+  margin-left: 1rem;
+}
+header div .headerLeft .gnb ul li a:hover {
+  color: #ff3636;
+}
+header div .menu-trigger {
+  width: 26px;
+  height: 16px;
+  position: relative;
+  margin: 50px 0 0 0;
+}
+header div .menu-trigger span {
+  display: inline-block;
+  position: absolute;
+  width: 26px;
+  height: 2px;
+  background: #ff3636;
+  transition: all 0.5s;
+}
+header div .menu-trigger span:nth-of-type(1) {
+  top: 0%;
+}
+header div .menu-trigger span:nth-of-type(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+header div .menu-trigger span:nth-of-type(3) {
+  top: 100%;
+  transform: translateY(-100%);
+}
+
+.slide_menu {
+  width: 30%;
+  height: 100vh;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #fff;
+  z-index: 999;
+  display: none;
+}
+.slide_menu .inner {
+  align-items: center;
+  position: relative;
+}
+.slide_menu .inner ul li {
+  position: relative;
+  display: block;
+  margin-top: 3rem;
+}
+.slide_menu .inner ul li::before {
+  display: block;
+  transform: rotate(-90deg);
+  position: absolute;
+  top: 20px;
+  left: -20px;
+  font-size: 0.7em;
+  text-align: right;
+  font-weight: 900;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.slide_menu .inner ul li:nth-of-type(1)::before {
+  content: "01";
+}
+.slide_menu .inner ul li:nth-of-type(2)::before {
+  content: "02";
+}
+.slide_menu .inner ul li:nth-of-type(3)::before {
+  content: "03";
+}
+.slide_menu .inner ul li a {
+  display: inline-block;
+}
+.slide_menu .inner ul li a h4 {
+  text-align: left;
+  font-weight: 900;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+}
+.slide_menu .inner .close_btn {
+  width: 26px;
+  height: 16px;
+  position: absolute;
+  left: 5%;
+  top: 60%;
+}
+.slide_menu .inner .close_btn span {
+  display: inline-block;
+  position: absolute;
+  width: 26px;
+  height: 2px;
+  background: #333;
+  transition: all 0.5s;
+}
+.slide_menu .inner .close_btn span:nth-of-type(1) {
+  top: 50%;
+  transform: translateY(0) rotate(-45deg);
+}
+.slide_menu .inner .close_btn span:nth-of-type(2) {
+  top: 50%;
+  transform: translateY(-50%);
+  transform: translateY(0) rotate(45deg);
+}
+
+main {
+  width: 100%;
+}
+main .about_wrap {
+  width: 90%;
+  height: 85vh;
+  margin: 0 auto;
+  overflow: hidden;
+  border: 1px solid #e1e1e1;
+  position: relative;
+}
+main .about_wrap .inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+main .about_wrap .inner .vdo_mask {
+  flex: 2;
+  margin: 0 auto;
+  position: relative;
+  z-index: -2;
+}
+main .about_wrap .inner .vdo_mask .vdo_bg {
+  width: 100%;
+}
+main .about_wrap .inner .vdo_mask svg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+main .about_wrap .inner .vdo_mask svg text {
+  font-family: Biko, sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 70px;
+}
+main .about_wrap .inner .vdo_mask svg rect {
+  fill: #fff;
+}
+main .about_wrap .inner .vdo_mask svg > rect {
+  mask: url(#mask);
+}
+main .about_wrap .inner .introduce {
+  flex: 2;
+  margin-left: 2rem;
+}
+main .about_wrap .inner .introduce h2 {
+  font-size: 1.3em;
+  letter-spacing: 1px;
+  color: #ff3636;
+  line-height: 2;
+}
+main .about_wrap .inner .introduce p {
+  font-size: 0.9em;
+}
+main .about_wrap .inner .introduce .education dt, main .about_wrap .inner .introduce .certificate dt {
+  line-height: 2;
+}
+main .about_wrap .inner .introduce .education dd, main .about_wrap .inner .introduce .certificate dd {
+  font-size: 0.9em;
+}
+main .about_wrap .inner .introduce .education dd::before, main .about_wrap .inner .introduce .certificate dd::before {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  background: #ff3636;
+  vertical-align: middle;
+  margin-right: 1rem;
+}
+main .about_wrap .inner .introduce .download {
+  margin: 0 auto;
+  transition: 0.5s;
+  width: 100%;
+}
+main .about_wrap .inner .introduce .download a {
+  border: 1px solid #ff3636;
+  padding: 0.5rem 1rem;
+  transition: 0.5s;
+  font-size: 0.7em;
+  text-align: center;
+}
+main .about_wrap .inner .introduce .download:hover a {
+  color: #fff;
+  background-color: #ff3636;
+}
+main .about_wrap .inner .skills {
+  flex: 2;
+  margin-left: 1rem;
+}
+main .about_wrap .inner .skills ul li {
+  float: left;
+  margin: 0 10% 5% 0;
+}
+main .about_wrap .inner .skills ul li:nth-of-type(2n) {
+  margin-right: 0;
+}
+main .about_wrap .inner .skills ul li dl dt {
+  color: #ff3636;
+  font-weight: 900;
+  line-height: 2;
+}
+main .about_wrap .inner .skills ul li dl dd {
+  font-size: 0.9em;
+}
+main .about_wrap .inner .skills ul li dl dd::before {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  background: #ff3636;
+  vertical-align: middle;
+  margin-right: 1rem;
+}
+main .about_wrap .line {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  z-index: -1;
+}
+main .about_wrap .line div {
+  flex: 6;
+  width: 1px;
+  height: 100%;
+  border-right: 1px solid #e1e1e1;
+}
+main .about_wrap .line div:nth-of-type(1) {
+  border: none;
+}
+main .about_wrap .line div:nth-of-type(6) {
+  border: none;
+}
