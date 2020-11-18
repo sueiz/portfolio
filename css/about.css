@@ -1,0 +1,398 @@
+body {
+  overflow: hidden;
+}
+
+main .about_wrap .inner .introduce h2, main .about_wrap .inner .skills h2 {
+  font-family: 'integral_cfheavy';
+  font-size: 3em;
+  color: #ff3636;
+  line-height: 2;
+}
+
+main .about_wrap .inner .introduce div .education dt, main .about_wrap .inner .introduce div .certificate dt, main .about_wrap .inner .skills ul li dl dt {
+  font: 200 1em/1.4 Montserrat;
+  font-size: .9em;
+  color: #555;
+  margin: 1rem 0;
+}
+
+@-webkit-keyframes dash {
+  100% {
+    stroke-dashoffset: 0px;
+  }
+}
+
+@keyframes dash {
+  100% {
+    stroke-dashoffset: 0px;
+  }
+}
+
+main {
+  width: 100%;
+}
+
+main .about_wrap {
+  width: 90%;
+  height: 85vh;
+  margin: 0 auto;
+  overflow: hidden;
+  border: 1px solid #e1e1e1;
+  position: relative;
+}
+
+main .about_wrap .inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: top;
+      -ms-flex-align: top;
+          align-items: top;
+  height: 100%;
+  position: relative;
+}
+
+main .about_wrap .inner .vdo_mask {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  margin: 0 auto;
+  position: relative;
+  z-index: -2;
+  overflow: hidden;
+}
+
+main .about_wrap .inner .vdo_mask .vdo_bg {
+  width: 100%;
+  margin: 5rem;
+}
+
+main .about_wrap .inner .vdo_mask svg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+}
+
+main .about_wrap .inner .vdo_mask svg defs {
+  position: absolute;
+  z-index: 999;
+}
+
+main .about_wrap .inner .vdo_mask svg mask path {
+  fill: #000;
+  position: absolute;
+  -webkit-transform: translate(15%, 15%);
+          transform: translate(15%, 15%);
+  z-index: 999;
+}
+
+main .about_wrap .inner .vdo_mask svg mask rect {
+  fill: #fff;
+  z-index: 999;
+}
+
+main .about_wrap .inner .vdo_mask svg .st0 {
+  fill: transparent;
+  stroke: #e1e1e1;
+  stroke-width: 1;
+  stroke-miterlimit: 1;
+  stroke-dasharray: 3000;
+  stroke-dashoffset: 3000;
+  -webkit-animation: dash 5s forwards;
+          animation: dash 5s forwards;
+  -webkit-transform: translate(15%, 15%);
+          transform: translate(15%, 15%);
+}
+
+main .about_wrap .inner .vdo_mask svg .st0:nth-of-type(2) {
+  -webkit-transform: translate(15%, 15%) rotate(-2.5deg);
+          transform: translate(15%, 15%) rotate(-2.5deg);
+}
+
+main .about_wrap .inner .vdo_mask svg .st0:nth-of-type(2) {
+  -webkit-transform: translate(15%, 15%) rotate(-2deg);
+          transform: translate(15%, 15%) rotate(-2deg);
+}
+
+main .about_wrap .inner .vdo_mask svg .st0:nth-of-type(3) {
+  -webkit-transform: translate(15%, 15%) rotate(-1.5deg);
+          transform: translate(15%, 15%) rotate(-1.5deg);
+}
+
+main .about_wrap .inner .vdo_mask svg .st0:nth-of-type(4) {
+  -webkit-transform: translate(15%, 15%) rotate(-1deg);
+          transform: translate(15%, 15%) rotate(-1deg);
+}
+
+main .about_wrap .inner .vdo_mask svg .st0:nth-of-type(5) {
+  -webkit-transform: translate(15%, 15%) rotate(-0.5deg);
+          transform: translate(15%, 15%) rotate(-0.5deg);
+}
+
+main .about_wrap .inner .vdo_mask svg .st0:nth-of-type(6) {
+  -webkit-transform: translate(15%, 15%) rotate(0deg);
+          transform: translate(15%, 15%) rotate(0deg);
+}
+
+main .about_wrap .inner .vdo_mask svg .st0:nth-of-type(7) {
+  -webkit-transform: translate(15%, 15%) rotate(0.5deg);
+          transform: translate(15%, 15%) rotate(0.5deg);
+}
+
+main .about_wrap .inner .vdo_mask svg .st0:nth-of-type(8) {
+  -webkit-transform: translate(15%, 15%) rotate(1deg);
+          transform: translate(15%, 15%) rotate(1deg);
+}
+
+main .about_wrap .inner .vdo_mask svg .st0:nth-of-type(9) {
+  -webkit-transform: translate(15%, 15%) rotate(3deg);
+          transform: translate(15%, 15%) rotate(3deg);
+}
+
+main .about_wrap .inner .vdo_mask svg .st0:nth-of-type(10) {
+  -webkit-transform: translate(15%, 15%) rotate(4deg);
+          transform: translate(15%, 15%) rotate(4deg);
+}
+
+main .about_wrap .inner .vdo_mask svg .st0:nth-of-type(11) {
+  -webkit-transform: translate(15%, 15%) rotate(5deg);
+          transform: translate(15%, 15%) rotate(5deg);
+}
+
+main .about_wrap .inner .vdo_mask svg .bg {
+  margin: 10rem;
+  fill: #fff;
+  -webkit-mask: url(#mask);
+          mask: url(#mask);
+}
+
+main .about_wrap .inner .vdo_mask svg .bgAni {
+  fill: #fff;
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+  -webkit-animation: bgAni 2s 2.5s forwards;
+          animation: bgAni 2s 2.5s forwards;
+}
+
+@-webkit-keyframes bgAni {
+  100% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+}
+
+@keyframes bgAni {
+  100% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+}
+
+@-webkit-keyframes show {
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes show {
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+main .about_wrap .inner .introduce {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  margin: 10rem 0 0 1rem;
+  overflow: hidden;
+}
+
+main .about_wrap .inner .introduce h2 {
+  -webkit-transform: translateX(-500px);
+          transform: translateX(-500px);
+  -webkit-animation: show 1s forwards;
+          animation: show 1s forwards;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+main .about_wrap .inner .introduce div {
+  -webkit-transform: translateX(-500px);
+          transform: translateX(-500px);
+  -webkit-animation: show 1s forwards;
+          animation: show 1s forwards;
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+
+main .about_wrap .inner .introduce div h3 {
+  font-size: 1.5em;
+}
+
+main .about_wrap .inner .introduce div p {
+  font-size: .8em;
+  line-height: 1.5;
+}
+
+main .about_wrap .inner .introduce div .education dd, main .about_wrap .inner .introduce div .certificate dd {
+  font-size: .8em;
+  line-height: 1.5;
+}
+
+main .about_wrap .inner .introduce div .education dd::before, main .about_wrap .inner .introduce div .certificate dd::before {
+  content: '';
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  background: #ff3636;
+  vertical-align: middle;
+  margin-right: 1rem;
+  border-radius: 50%;
+}
+
+main .about_wrap .inner .introduce div .download {
+  margin: 1rem auto;
+  -webkit-transition: .5s;
+  transition: .5s;
+  text-align: center;
+}
+
+main .about_wrap .inner .introduce div .download a {
+  border: 1px solid #ff3636;
+  padding: .5rem 1rem;
+  -webkit-transition: .5s;
+  transition: .5s;
+  font-size: .7em;
+  text-align: center;
+}
+
+main .about_wrap .inner .introduce div .download a:hover {
+  color: #fff;
+  background-color: #ff3636;
+}
+
+main .about_wrap .inner .skills {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  overflow: hidden;
+  position: relative;
+  -webkit-animation: show 1s forwards;
+          animation: show 1s forwards;
+  z-index: -1;
+  margin: 10rem 0 0 0;
+}
+
+main .about_wrap .inner .skills h2 {
+  -webkit-transform: translateX(-500px);
+          transform: translateX(-500px);
+  -webkit-animation: show 1s forwards;
+          animation: show 1s forwards;
+  -webkit-animation-delay: 1.4s;
+          animation-delay: 1.4s;
+}
+
+main .about_wrap .inner .skills ul {
+  margin: 0;
+}
+
+main .about_wrap .inner .skills ul li {
+  width: 40%;
+  display: inline-block;
+  margin-right: 10%;
+  vertical-align: top;
+}
+
+main .about_wrap .inner .skills ul li:nth-of-type(1), main .about_wrap .inner .skills ul li:nth-of-type(3), main .about_wrap .inner .skills ul li:nth-of-type(5) {
+  -webkit-transform: translateX(-500px);
+          transform: translateX(-500px);
+  -webkit-animation: show 1s forwards;
+          animation: show 1s forwards;
+  -webkit-animation-delay: 1.6s;
+          animation-delay: 1.6s;
+}
+
+main .about_wrap .inner .skills ul li:nth-of-type(2n) {
+  margin-right: 0;
+  -webkit-transform: translateX(-500px);
+          transform: translateX(-500px);
+  -webkit-animation: show 1s forwards;
+          animation: show 1s forwards;
+  -webkit-animation-delay: 1.8s;
+          animation-delay: 1.8s;
+}
+
+main .about_wrap .inner .skills ul li dl div span {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  background: #ff3636;
+  border-radius: 50%;
+  margin-right: .5rem;
+}
+
+main .about_wrap .inner .skills ul li dl dt div {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: .5rem;
+}
+
+main .about_wrap .inner .skills ul li dl dt div span {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  background: #ff3636;
+  border-radius: 50%;
+  margin-right: .3rem;
+}
+
+main .about_wrap .inner .skills ul li dl dd {
+  font-size: .8em;
+  margin-bottom: .5rem;
+}
+
+main .about_wrap .inner .skills ul li dl dd::before {
+  content: '';
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  background: #ff3636;
+  vertical-align: middle;
+  margin-right: 1rem;
+  border-radius: 50%;
+}
+
+main .about_wrap .line {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  z-index: -3;
+}
+
+main .about_wrap .line div {
+  -webkit-box-flex: 6;
+      -ms-flex: 6;
+          flex: 6;
+  width: 1px;
+  height: 100%;
+  border-right: 1px solid #e1e1e1;
+}
+
+main .about_wrap .line div:nth-of-type(6) {
+  border: none;
+}
+/*# sourceMappingURL=about.css.map */

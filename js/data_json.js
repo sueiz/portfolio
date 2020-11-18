@@ -24,7 +24,7 @@ $(function () {
 
                     number += "<mark>" + num + "</mark>";
                     label += "<div>";
-                    label += "<p class='label_number'>0" + num + "</p><p class='label_tit'>" + tit + "</p>";
+                    label += "<div><p class='label_number'>0" + num + "</p><p class='label_tit'>" + tit + "</p></div>";
                     label += "<p>" + description + "</p></div>";
                     title += "<p>" + tit + "</p>";
                     image += "<div>"
@@ -35,6 +35,9 @@ $(function () {
                 $('.label_wrap').append(label);
                 $('.title_wrap').append(title);
                 $('.img_wrap').append(image);
+
+            
+
 
                 /* title span */
                 var text = document.querySelectorAll(".title_wrap p");
@@ -57,6 +60,9 @@ $(function () {
                 var labelMove = document.querySelector('.label_wrap');
                 var titMove = document.querySelector('.title_wrap');
                 var clone = projectMove.cloneNode(true);
+                var labelNum = document.querySelectorAll('.label_number');
+                var labelTit = document.querySelectorAll('.label_tit')
+               
                 
             
                 var i = 0;
@@ -72,16 +78,24 @@ $(function () {
                             projectMove.style.transform = "translateY(0%)";
                             txtMove.style.transform = "translateY(0)"
                             titMove.style.transform = "translateY(0%)"
+                            
                             labelMove.style.transform = "translateY(0)"
                             return;
                         }
                         i++;
                         var a = i * 100;
                         var b = i * 15;
-                        var d = i * 39;
+                        var d = i * 26;
                         projectMove.style.transform = "translateY(" + a + "%)";
                         txtMove.style.transform = "translateY("+ b +"px)";
                         titMove.style.transform = "translateY("+ a +"%)";
+                        labelMove.animate([
+                            {opacity: '0'},
+                            {opacity: '1'}
+                        ],{
+                            duration: 1000,
+                            iterations: 1
+                        });
                         labelMove.style.transform = "translateY("+ d +"px)";
                     }else if(e.wheelDelta < 0){
                         //down
@@ -91,16 +105,28 @@ $(function () {
                         i--;
                         var a = i * 100;
                         var b = i * 15;
-                        var d = i * 39;
+                        var d = i * 26;
                         projectMove.style.transform = "translateY(" + a + "%)";
                         txtMove.style.transform = "translateY("+ b +"px)";
                         titMove.style.transform = "translateY("+ a +"%)";
-                        
+                        labelMove.animate([
+                            {opacity: '0'},
+                            {opacity: '1'}
+                        ],{
+                            duration: 1000,
+                            iterations: 1
+                        });
                         labelMove.style.transform = "translateY("+ d +"px)";
                     }
                     bln = true;
                     setTimeout(function(){bln=false},500);
+
+                    
                 }
+
+                
+            
+            
             }
             fun();
         }

@@ -1,14 +1,37 @@
 body {
-  background: #ff3636;
   overflow: hidden;
 }
 
-header {
+@-webkit-keyframes slide {
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@keyframes slide {
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+.projects_wrap {
+  width: 100%;
+  height: 100vh;
+  background: #ff3636;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-animation: slide 1s forwards;
+          animation: slide 1s forwards;
+}
+
+.projects_wrap header {
   width: 100%;
   height: 70px;
 }
 
-header div {
+.projects_wrap header div {
   width: 90%;
   margin: 0 auto;
   display: -webkit-box;
@@ -22,23 +45,23 @@ header div {
           align-items: center;
 }
 
-header div .headerLeft {
+.projects_wrap header div .headerLeft {
   margin: 50px 0 0 0;
   width: 20%;
   position: relative;
 }
 
-header div .headerLeft::after {
+.projects_wrap header div .headerLeft::after {
   content: '';
   display: inline-block;
   clear: both;
 }
 
-header div .headerLeft > a {
+.projects_wrap header div .headerLeft > a {
   color: #e1e1e1;
 }
 
-header div .headerLeft > a::after {
+.projects_wrap header div .headerLeft > a::after {
   content: '';
   display: inline-block;
   width: 4px;
@@ -54,11 +77,11 @@ header div .headerLeft > a::after {
   transition: 1s ease-in-out;
 }
 
-header div .headerLeft > a:hover {
+.projects_wrap header div .headerLeft > a:hover {
   color: #555;
 }
 
-header div .headerLeft > a:hover::after {
+.projects_wrap header div .headerLeft > a:hover::after {
   -webkit-animation: circle 1s infinite;
           animation: circle 1s infinite;
 }
@@ -93,54 +116,58 @@ header div .headerLeft > a:hover::after {
   }
 }
 
-header div .headerLeft .gnb {
+.projects_wrap header div .headerLeft .gnb {
   float: right;
 }
 
-header div .headerLeft .gnb ul li {
+.projects_wrap header div .headerLeft .gnb ul li {
   display: inline-block;
   margin-left: 1rem;
 }
 
-header div .headerLeft .gnb ul li a:hover {
+.projects_wrap header div .headerLeft .gnb ul li a:hover {
   color: #ff3636;
 }
 
-header div .back_btn {
+.projects_wrap header div .back_btn {
   width: 0;
   margin: 30px 0 0 0;
   -webkit-transform: rotate(-10deg);
           transform: rotate(-10deg);
 }
 
-header div .back_btn:hover a {
+.projects_wrap header div .back_btn:hover a {
   color: #fff;
 }
 
-header div .back_btn a {
+.projects_wrap header div .back_btn a {
   font-family: 'integral_cfheavy';
   color: #333;
 }
 
-main {
+.projects_wrap main {
   width: 100%;
   margin: 10rem 5rem;
 }
 
-main .project_title {
+.projects_wrap main .project_title {
   -webkit-transform: rotate(-8deg);
           transform: rotate(-8deg);
 }
 
-main .project_title h2 img {
+.projects_wrap main .project_title h2 {
+  white-space: nowrap;
+}
+
+.projects_wrap main .project_title h2 img {
   display: none;
 }
 
-main .project_title h2:hover {
+.projects_wrap main .project_title h2:hover {
   color: #fff;
 }
 
-main .project_title h2:hover img {
+.projects_wrap main .project_title h2:hover img {
   display: block;
   position: absolute;
   left: 40%;

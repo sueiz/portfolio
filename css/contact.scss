@@ -1,0 +1,116 @@
+body {
+    overflow: hidden;
+}
+
+@keyframes show { 
+    100% {
+        transform: translateX(0);
+    }
+}
+
+main {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    .contact {
+        width: 90%;
+        height: 85vh;
+        margin: 0 auto;
+        overflow: hidden;
+        border: 1px solid #e1e1e1;
+        position: relative;
+        display: table;
+        .contact_wrap {
+            width: 100%; height :100%;
+            display: table-cell;
+            vertical-align: middle;
+            .contact_top {
+                width: 80%;
+                margin: 0 auto;
+                .slide_title {
+                    width: 100%;
+                    margin: 0 auto;
+                    overflow: hidden;
+                    h1 {
+                        font-size: 5.5rem;
+                        text-align: center;
+                        // transform: translateX(-600px);
+                        // animation: show 1s forwards;
+                    }
+                }
+                
+            }
+            
+            .contact_body {
+                width: 60%;
+                margin: 5rem auto;
+                display: flex;
+                justify-content: space-between;
+                align-items: top;
+                .profile {
+                    margin:  0 auto;
+                    h2 {
+                        font-family: 'Montserrat', sans-serif;
+                        font-size: 2em;
+                        font-weight: 100;
+                        color: #ff3636;
+                        line-height: 3;
+                    }
+                    p {
+                        font-family: 'Montserrat', sans-serif;
+                        font-size: 1.5em;
+                        font-weight: 100;
+                        color: #ff3636;
+                    }
+                }
+                form {
+                    width: 50%;
+                    margin: 0 auto;
+                    overflow: hidden;
+                    table {
+                        width: 100%;
+                        // transform: translateX(-500px);
+                        // animation: show 1s forwards;
+                        animation-delay: .5s;
+                        tr {
+                            td {
+                                input,textarea {
+                                    margin-bottom: 1rem;
+                                    width: 100%;
+                                    border: none;
+                                    border-bottom: 1px solid #ff3636;
+                                    font-family: 'Montserrat', sans-serif;
+                                    font-size: .7em;
+                                    letter-spacing: -0.3px;
+                                    outline: none;
+                                    background: transparent;
+                                }
+                                textarea {
+                                    height: 100px;
+                                }
+                                input[value=SEND]{
+                                    border-bottom: none;
+                                    background: #ff3636;
+                                    color: #fff;
+                                    padding: .5rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .line {
+            width: 100%; height: 100%;
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            z-index: -1;
+            div {
+                flex: 13;
+                width: 1px; height: 100%;
+                border-right: 1px solid #e1e1e1;
+            }
+        }
+    }
+}

@@ -1,0 +1,166 @@
+body {
+  -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+header div .headerLeft .logo {
+  color: #333;
+}
+
+header div .menu-trigger {
+  display: none;
+}
+
+header div .back_btn {
+  display: block;
+}
+
+main {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-top: 70px;
+}
+
+main .project_wrap {
+  width: 100%;
+}
+
+main .project_wrap .top {
+  margin: 0 auto;
+  width: 100%;
+  height: 93vh;
+  display: table;
+  position: relative;
+}
+
+main .project_wrap .top .scrolling_text {
+  display: table-cell;
+  vertical-align: middle;
+  -webkit-transform: translateX(300px);
+          transform: translateX(300px);
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+  will-change: transform;
+}
+
+main .project_wrap .top .scrolling_text h1 {
+  font-family: 'integral_cfheavy';
+  color: #ff3636;
+  text-align: center;
+  font-size: 15rem;
+}
+
+main .project_wrap .top div:nth-of-type(2) {
+  position: absolute;
+  left: 50vw;
+  top: 30%;
+  -webkit-transform: translate(-50%, -30%);
+          transform: translate(-50%, -30%);
+}
+
+main .project_wrap .top div:nth-of-type(2) img {
+  width: 100%;
+  display: block;
+  border: 10px solid #fff;
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+}
+
+main .project_wrap .body {
+  width: 100%;
+  background: #fff;
+}
+
+main .project_wrap .body .content {
+  width: 50%;
+  margin: 0 auto;
+  border: 1px solid #fff;
+}
+
+main .project_wrap .body .content h2 {
+  font-size: 3em;
+  margin: 3rem 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+main .project_wrap .body .content div {
+  width: 100%;
+  display: table;
+  margin-bottom: 3rem;
+}
+
+main .project_wrap .body .content div h3 {
+  display: table-cell;
+  vertical-align: middle;
+  width: 20%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: .8em;
+}
+
+main .project_wrap .body .content div p {
+  display: table-cell;
+  width: 80%;
+  font-size: .8em;
+  line-height: 1.5;
+}
+
+main .project_wrap .body .content .sitemap ul, main .project_wrap .body .content .responsive ul, main .project_wrap .body .content .language ul {
+  display: table-cell;
+  width: 80%;
+}
+
+main .project_wrap .body .content .sitemap ul li, main .project_wrap .body .content .responsive ul li, main .project_wrap .body .content .language ul li {
+  display: inline-block;
+  margin-right: 3rem;
+  border: 1px solid #e9e9eb;
+  padding: .5rem 1rem;
+  font-size: .8em;
+}
+
+main .project_wrap .body .content .solution dl dt {
+  font-size: .8em;
+  line-height: 1.5;
+  color: #ff3636;
+  font-weight: 700;
+  margin-bottom: .5rem;
+}
+
+main .project_wrap .body .content .solution dl dd {
+  font-size: .8em;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+main .project_wrap .body .content .vdo {
+  width: 100%;
+}
+
+main .project_wrap .body .content .vdo video {
+  width: 100%;
+}
+
+main .project_wrap .body .mobile {
+  width: 100%;
+  height: 500px;
+  background: url("../img/mobile_krispy.jpg") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 50%;
+  overflow: hidden;
+}
+/*# sourceMappingURL=project.css.map */
