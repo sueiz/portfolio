@@ -1,0 +1,488 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap");
+/* * {font-family: 'Noto Sans KR', sans-serif;} */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap");
+/* font-family: 'Noto Sans', sans-serif; */
+@import url("https://cdn.rawgit.com/openhiun/hangul/14c0f6faa2941116bb53001d6a7dcd5e82300c3f/nanumbarungothic.css");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mukta&display=swap");
+* {
+  font-family: "Nanum Barun Gothic", sans-serif;
+}
+
+.header_eng {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.7em;
+  letter-spacing: -0.3px;
+  color: #555;
+}
+
+.menu_eng {
+  font-family: "Abril Fatface", cursive;
+  font-size: 5em;
+  color: #333;
+}
+
+.about_eng {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 14px;
+}
+
+@font-face {
+  font-family: Biko;
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/biko-black.woff");
+}
+@font-face {
+  font-family: "integral_cfheavy";
+  src: url("../css/font/integralcf-heavy-webfont.woff") format("woff2"), url("../css/font/integralcf-heavy-webfont.woff2") format("woff");
+}
+.title_eng {
+  font-family: "integral_cfheavy";
+  font-size: 7rem;
+  color: #ff3636;
+  letter-spacing: 5px;
+  text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html, body {
+  margin: 0;
+}
+
+ul, li, dl, dt, dd {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6, figure, figcaption, p, div {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  color: #555;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+/* header */
+header {
+  width: 100%;
+  height: 70px;
+}
+header div {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header div .headerLeft {
+  margin: 50px 0 0 0;
+  width: 20%;
+  position: relative;
+  z-index: 999;
+}
+header div .headerLeft::after {
+  content: "";
+  display: inline-block;
+  clear: both;
+}
+header div .headerLeft .logo {
+  color: #e1e1e1;
+}
+header div .headerLeft .logo.active::after {
+  background: #fff;
+}
+header div .headerLeft .logo::after {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  background: #ff3636;
+  border-radius: 100%;
+  position: absolute;
+  left: 30%;
+  top: 50%;
+  transform: translate(-30%, -50%);
+  transition: 1s ease-in-out;
+}
+header div .headerLeft .logo:hover {
+  color: #555;
+}
+header div .headerLeft .logo:hover::after {
+  animation: circle 1s infinite;
+}
+@keyframes circle {
+  0% {
+    width: 8px;
+    height: 8px;
+  }
+  20% {
+    width: 9px;
+    height: 9px;
+  }
+  100% {
+    width: 6px;
+    height: 6px;
+  }
+}
+header div .headerLeft .gnb {
+  float: right;
+}
+header div .headerLeft .gnb ul li {
+  display: inline-block;
+  margin-left: 1rem;
+}
+header div .headerLeft .gnb ul li > a:hover {
+  color: #ff3636;
+}
+header div .headerLeft .gnb ul li.active a:hover {
+  color: #fff;
+}
+header div .menu-trigger {
+  width: 26px;
+  height: 16px;
+  position: relative;
+  margin: 15px 0 0 0;
+}
+header div .menu-trigger span {
+  display: inline-block;
+  position: absolute;
+  width: 26px;
+  height: 2px;
+  background: #ff3636;
+  transition: all 0.5s;
+}
+header div .menu-trigger span:nth-of-type(1) {
+  top: 0%;
+}
+header div .menu-trigger span:nth-of-type(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+header div .menu-trigger span:nth-of-type(3) {
+  top: 100%;
+  transform: translateY(-100%);
+}
+header div .back_btn {
+  width: 0;
+  margin: 30px 0 0 0;
+  transform: rotate(-10deg);
+  z-index: 999;
+  display: none;
+}
+header div .back_btn:hover a {
+  color: #fff;
+}
+header div .back_btn a {
+  font-family: "integral_cfheavy";
+  color: #333;
+}
+
+.slide_menu {
+  width: 30%;
+  height: 100vh;
+  position: absolute;
+  right: -30%;
+  top: 0;
+  background: #fff;
+  z-index: 999;
+  transition: 0.5s;
+  display: none;
+}
+.slide_menu .inner {
+  height: 100%;
+  position: relative;
+}
+.slide_menu .inner ul {
+  position: absolute;
+  left: 25%;
+  top: 20%;
+}
+.slide_menu .inner ul li {
+  position: relative;
+  display: block;
+  margin-top: 3rem;
+}
+.slide_menu .inner ul li::before {
+  display: block;
+  transform: rotate(-90deg);
+  position: absolute;
+  top: 20px;
+  left: -20px;
+  font-size: 0.7em;
+  text-align: right;
+  font-family: "Noto Sans", sans-serif;
+}
+.slide_menu .inner ul li:nth-of-type(1)::before {
+  content: "01";
+}
+.slide_menu .inner ul li:nth-of-type(2)::before {
+  content: "02";
+}
+.slide_menu .inner ul li:nth-of-type(3)::before {
+  content: "03";
+}
+.slide_menu .inner ul li:hover a h4:after {
+  opacity: 1;
+}
+.slide_menu .inner ul li a {
+  display: block;
+}
+.slide_menu .inner ul li a h4 {
+  text-align: left;
+  font-family: "Noto Sans", sans-serif;
+  letter-spacing: 4px;
+  transition: 0.5s;
+  font-size: 12px;
+}
+.slide_menu .inner ul li a h4:before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 1px;
+  background: #333;
+  vertical-align: middle;
+  transform: translateX(-20px);
+}
+.slide_menu .inner ul li a h4:after {
+  content: "";
+  display: block;
+  width: 20%;
+  margin-top: 0.5rem;
+  border-bottom: 2px solid #333;
+  transform: translateX(5px);
+  opacity: 0;
+  transition: 0.37s;
+}
+.slide_menu .inner .close_btn {
+  width: 26px;
+  height: 16px;
+  position: absolute;
+  left: 5%;
+  top: 50%;
+}
+.slide_menu .inner .close_btn span {
+  display: inline-block;
+  position: absolute;
+  width: 26px;
+  height: 2px;
+  background: #333;
+  transition: all 0.5s;
+}
+.slide_menu .inner .close_btn span:nth-of-type(1) {
+  top: 50%;
+  transform: translateY(0) rotate(-45deg);
+}
+.slide_menu .inner .close_btn span:nth-of-type(2) {
+  top: 50%;
+  transform: translateY(-50%);
+  transform: translateY(0) rotate(45deg);
+}
+
+.projects_wrap {
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  background: #ff3636;
+  position: absolute;
+  left: -100%;
+  top: 0;
+  z-index: 998;
+  transition: left 0.5s;
+}
+.projects_wrap .projects {
+  width: 100%;
+  margin: 12rem 5rem;
+}
+.projects_wrap .projects .project_title {
+  transform: rotate(-7deg);
+}
+.projects_wrap .projects .project_title h2 {
+  white-space: nowrap;
+}
+.projects_wrap .projects .project_title h2 img {
+  display: none;
+}
+.projects_wrap .projects .project_title h2:hover {
+  color: #fff;
+}
+.projects_wrap .projects .project_title h2:hover img {
+  display: block;
+  position: absolute;
+  left: 40%;
+  top: 50%;
+  transform: translate(-40%, -50%);
+  z-index: -1;
+  opacity: 0.8;
+  border: 10px solid #fff;
+}
+
+.project_list {
+  position: fixed;
+  left: 10%;
+  bottom: 10%;
+  border: 1px solid #ff3636;
+  border-radius: 100%;
+  width: 70px;
+  height: 70px;
+  padding: 1.3rem 2.1rem;
+}
+.project_list .btn span {
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  border-radius: 100%;
+  background: #ff3636;
+  transition: 0.5s ease-in-out;
+  transform: scale(1);
+}
+.project_list .btn p {
+  position: absolute;
+  left: 65%;
+  bottom: 18%;
+  color: #999;
+  font-size: 0.7em;
+  width: 100%;
+  background: #fff;
+  padding: 1rem 0.5rem;
+  transition: 0.5s ease-in-out;
+  white-space: nowrap;
+}
+.project_list .btn:hover span {
+  transform: scale(2);
+}
+.project_list .btn:hover p {
+  color: #333;
+  left: 80%;
+}
+
+.popup_contact {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+  backdrop-filter: blur(5px);
+  z-index: 1099;
+}
+.popup_contact .popup_wrap {
+  width: 30%;
+  position: absolute;
+  z-index: 1000;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+}
+.popup_contact .popup_wrap .contact {
+  width: 100%;
+  position: relative;
+  border: 1px solid #e1e1e1;
+  border-radius: 10px;
+  background: #fff;
+}
+.popup_contact .popup_wrap .contact .inner {
+  margin: 3rem auto;
+}
+.popup_contact .popup_wrap .contact .inner .contact_top {
+  width: 100%;
+  margin: auto;
+}
+.popup_contact .popup_wrap .contact .inner .contact_top h2 {
+  font-family: "integral_cfheavy";
+  font-size: 1.5rem;
+  color: #ff3636;
+  text-align: center;
+}
+.popup_contact .popup_wrap .contact .inner .contact_body {
+  width: 100%;
+}
+.popup_contact .popup_wrap .contact .inner .contact_body .profile {
+  margin: 0 auto 2rem;
+  text-align: center;
+}
+.popup_contact .popup_wrap .contact .inner .contact_body .profile h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  color: #333;
+  line-height: 3;
+  font-size: 0.7em;
+}
+.popup_contact .popup_wrap .contact .inner .contact_body .profile p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.7em;
+  font-weight: 100;
+  color: #333;
+}
+.popup_contact .popup_wrap .contact .inner .contact_body form {
+  width: 70%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.popup_contact .popup_wrap .contact .inner .contact_body form table {
+  width: 100%;
+}
+.popup_contact .popup_wrap .contact .inner .contact_body form table tr td input, .popup_contact .popup_wrap .contact .inner .contact_body form table tr td textarea {
+  margin-bottom: 1rem;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.7em;
+  letter-spacing: -0.3px;
+  outline: none;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #ff3636;
+  padding: 0.5rem 1rem;
+}
+.popup_contact .popup_wrap .contact .inner .contact_body form table tr td textarea {
+  height: 100px;
+}
+.popup_contact .popup_wrap .contact .inner .contact_body form table tr td input[value=SEND] {
+  border-bottom: none;
+  background: #ff3636;
+  color: #fff;
+  padding: 0.5rem;
+}
+.popup_contact .popup_wrap .contact .popup_close {
+  width: 10px;
+  height: 6px;
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  z-index: 1001;
+}
+.popup_contact .popup_wrap .contact .popup_close span {
+  display: inline-block;
+  position: absolute;
+  width: 10px;
+  height: 1px;
+  background: #555;
+  transition: all 0.5s;
+}
+.popup_contact .popup_wrap .contact .popup_close span:nth-of-type(1) {
+  top: 50%;
+  transform: translateY(0) rotate(-45deg);
+}
+.popup_contact .popup_wrap .contact .popup_close span:nth-of-type(2) {
+  top: 50%;
+  transform: translateY(-50%);
+  transform: translateY(0) rotate(45deg);
+}
+
+@media (min-width: 1440px) {
+  * {
+    font-size: 16px;
+  }
+}

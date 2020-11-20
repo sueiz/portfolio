@@ -1,54 +1,47 @@
-window.addEventListener('DOMContentLoaded', function () {
-    var projectMove = document.querySelector('.img_wrap');
-    var txtMove = document.querySelector('.page p');
-    var labelMove = document.querySelector('.label_wrap');
-    var titMove = document.querySelector('.title_wrap');
+$(function(){
+    var body = document.querySelector('body');
+    var clickBtn = document.querySelector('.click_btn');
+    var cursor = document.getElementById('cursor');
 
+    if (document.addEventListener) {
+        document.addEventListener('mousemove', cursorFun);
+    };
 
-    var i = 0;
-    var bln = false;
-
-    
-    window.addEventListener('mousewheel',swift);
-
-    function swift(e) {
-        if(bln) return;
-        console.log(e.wheelDelta)
-        if(e.wheelDelta > 0){
-            console.log(i)
-            if (i >= 0){
-                projectMove.style.transform = "translateY(0%)";
-                txtMove.style.transform = "translateY(0)"
-                titMove.style.transform = "translateY(0)"
-                labelMove.style.transform = "translateY(0)"
-                return;
-            }
-            i++;
-            var a = i * 100;
-            var b = i * 15;
-            var c = i * 200;
-            var d = i * 39;
-            projectMove.style.transform = "translateY(" + a + "%)";
-            txtMove.style.transform = "translateY("+ b +"px)";
-            titMove.style.transform = "translateY("+ c +"%)";
-            labelMove.style.transform = "translateY("+ d +"px)";
-
-        }else if(e.wheelDelta < 0){
-            if( i <= -2 ){
-                return;
-            }
-            i--;
-            var a = i * 100;
-            var b = i * 15;
-            var c = (i * 100)+100 ;
-            var d = i * 39;
-            projectMove.style.transform = "translateY(" + a + "%)";
-            txtMove.style.transform = "translateY("+ b +"px)";
-            titMove.style.transform = "translateY("+ c +"%)";
-            labelMove.style.transform = "translateY("+ d +"px)";
-
-        }
-        bln = true;
-        setTimeout(function(){bln=false},500);
+    function cursorFun(e){
+        var positionLeft = e.clientX;
+        var positionTop = e.clientY;
+        cursor.style.left = positionLeft - 20 + "px";
+        cursor.style.top = positionTop - 20 + "px";
     }
-});
+
+    clickBtn.addEventListener('mouseover',mouseEnter);
+    clickBtn.addEventListener('mouseleave',mouseLeave);
+
+    function mouseEnter(){
+        body.classList.add('active');
+        cursor.classList.add('active');
+    }
+    function mouseLeave(){
+        body.classList.remove('active');
+        cursor.classList.remove('active');
+    }
+
+    var body = document.querySelector('body');
+
+    setTimeout(function() {
+        body.classList.add('active');
+    }, 10);
+
+    clickBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        body.classList.add('page');
+
+        setTimeout(function() {
+            location.href = clickBtn.href;
+        }, 500);
+
+
+    });
+    
+
+})

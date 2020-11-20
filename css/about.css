@@ -211,8 +211,8 @@ main .about_wrap .inner .introduce {
   -webkit-box-flex: 2;
       -ms-flex: 2;
           flex: 2;
-  margin: 10rem 0 0 1rem;
   overflow: hidden;
+  margin: 15vh auto;
 }
 
 main .about_wrap .inner .introduce h2 {
@@ -288,7 +288,7 @@ main .about_wrap .inner .skills {
   -webkit-animation: show 1s forwards;
           animation: show 1s forwards;
   z-index: -1;
-  margin: 10rem 0 0 0;
+  margin: 15vh auto;
 }
 
 main .about_wrap .inner .skills h2 {
@@ -357,6 +357,7 @@ main .about_wrap .inner .skills ul li dl dt div span {
 main .about_wrap .inner .skills ul li dl dd {
   font-size: .8em;
   margin-bottom: .5rem;
+  white-space: nowrap;
 }
 
 main .about_wrap .inner .skills ul li dl dd::before {
@@ -395,4 +396,34 @@ main .about_wrap .line div {
 main .about_wrap .line div:nth-of-type(6) {
   border: none;
 }
+
+/*
+@media (min-width: 1440px) {
+    main {
+        .about_wrap {
+            .inner {
+                .vdo_mask {
+                    .vdo_bg {
+                        margin: 4rem;
+                    }
+                    .svg {
+                        transform: scale(0.75);
+                        defs {}
+                        mask {
+                            path {
+                                width: 80%;
+                                height: 80%;
+                            }
+                            rect {}
+                        }
+                        .st0 {
+                            width: 80%; height: 80%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+*/
 /*# sourceMappingURL=about.css.map */

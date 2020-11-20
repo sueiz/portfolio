@@ -13,12 +13,17 @@
 
     $name = $_GET['name'];
     $email = $_GET['email'];
-    $phohe = $_GET['phone'];
+    $phone = $_GET['phone'];
     $message = $_GET['message'];
 
     $query = "insert into contact (name,email,phone,message) values ('$name','$email','$phone','$message')";
-    mysqli_query($db,$query);
 
+    sql($query);
+
+    echo "<script>
+
+            location.href = 'https://www.naver.com/';
+        <script>"
 ?>
 
 

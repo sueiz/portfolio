@@ -19,88 +19,69 @@ body {
 main {
   width: 100%;
   position: relative;
-  overflow: hidden;
 }
 
-main .contact {
-  width: 90%;
-  height: 85vh;
+main .popup_contact {
+  width: 25%;
+  position: absolute;
+  left: 20%;
+  top: 0%;
   margin: 0 auto;
-  overflow: hidden;
   border: 1px solid #e1e1e1;
-  position: relative;
-  display: table;
+  border-radius: 10px;
 }
 
-main .contact .contact_wrap {
+main .popup_contact .inner {
+  margin: 3rem auto;
+}
+
+main .popup_contact .inner .contact_top {
   width: 100%;
-  height: 100%;
-  display: table-cell;
-  vertical-align: middle;
+  margin: auto;
 }
 
-main .contact .contact_wrap .contact_top {
-  width: 80%;
-  margin: 0 auto;
-}
-
-main .contact .contact_wrap .contact_top .slide_title {
-  width: 100%;
-  margin: 0 auto;
-  overflow: hidden;
-}
-
-main .contact .contact_wrap .contact_top .slide_title h1 {
-  font-size: 5.5rem;
+main .popup_contact .inner .contact_top h2 {
+  font-family: 'integral_cfheavy';
+  font-size: 1.5rem;
+  color: #ff3636;
   text-align: center;
 }
 
-main .contact .contact_wrap .contact_body {
-  width: 60%;
-  margin: 5rem auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: top;
-      -ms-flex-align: top;
-          align-items: top;
+main .popup_contact .inner .contact_body {
+  width: 100%;
 }
 
-main .contact .contact_wrap .contact_body .profile {
-  margin: 0 auto;
+main .popup_contact .inner .contact_body .profile {
+  margin: 0 auto rem;
+  text-align: center;
 }
 
-main .contact .contact_wrap .contact_body .profile h2 {
+main .popup_contact .inner .contact_body .profile h2 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 2em;
   font-weight: 100;
-  color: #ff3636;
+  color: #333;
   line-height: 3;
+  font-size: .7em;
 }
 
-main .contact .contact_wrap .contact_body .profile p {
+main .popup_contact .inner .contact_body .profile p {
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.5em;
+  font-size: .7em;
   font-weight: 100;
-  color: #ff3636;
+  color: #333;
 }
 
-main .contact .contact_wrap .contact_body form {
-  width: 50%;
+main .popup_contact .inner .contact_body form {
+  width: 70%;
   margin: 0 auto;
   overflow: hidden;
 }
 
-main .contact .contact_wrap .contact_body form table {
+main .popup_contact .inner .contact_body form table {
   width: 100%;
-  -webkit-animation-delay: .5s;
-          animation-delay: .5s;
 }
 
-main .contact .contact_wrap .contact_body form table tr td input, main .contact .contact_wrap .contact_body form table tr td textarea {
+main .popup_contact .inner .contact_body form table tr td input, main .popup_contact .inner .contact_body form table tr td textarea {
   margin-bottom: 1rem;
   width: 100%;
   border: none;
@@ -112,36 +93,46 @@ main .contact .contact_wrap .contact_body form table tr td input, main .contact 
   background: transparent;
 }
 
-main .contact .contact_wrap .contact_body form table tr td textarea {
+main .popup_contact .inner .contact_body form table tr td textarea {
   height: 100px;
 }
 
-main .contact .contact_wrap .contact_body form table tr td input[value=SEND] {
+main .popup_contact .inner .contact_body form table tr td input[value=SEND] {
   border-bottom: none;
   background: #ff3636;
   color: #fff;
   padding: .5rem;
 }
 
-main .contact .line {
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+main .popup_contact .popup_close {
+  width: 10px;
+  height: 6px;
   position: absolute;
-  z-index: -1;
+  right: 5%;
+  top: 5%;
 }
 
-main .contact .line div {
-  -webkit-box-flex: 13;
-      -ms-flex: 13;
-          flex: 13;
-  width: 1px;
-  height: 100%;
-  border-right: 1px solid #e1e1e1;
+main .popup_contact .popup_close span {
+  display: inline-block;
+  position: absolute;
+  width: 10px;
+  height: 1px;
+  background: #555;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+main .popup_contact .popup_close span:nth-of-type(1) {
+  top: 50%;
+  -webkit-transform: translateY(0) rotate(-45deg);
+          transform: translateY(0) rotate(-45deg);
+}
+
+main .popup_contact .popup_close span:nth-of-type(2) {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transform: translateY(0) rotate(45deg);
+          transform: translateY(0) rotate(45deg);
 }
 /*# sourceMappingURL=contact.css.map */
