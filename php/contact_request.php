@@ -18,12 +18,11 @@
 
     $query = "insert into contact (name,email,phone,message) values ('$name','$email','$phone','$message')";
 
-    sql($query);
+    mysqli_query($db,$query);
 
     echo "<script>
-
-            location.href = 'https://www.naver.com/';
-        <script>"
+            location.href = '/work.php';
+        </script>"
 ?>
 
 

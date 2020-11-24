@@ -1,6 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Sujin Jeong - Portfolio</title>
     <link href="../css/common.css" rel="stylesheet" type="text/css">
     <link href="../css/project.css" rel="stylesheet" type="text/css">
@@ -65,15 +68,19 @@
                         <li>JAVASCRIPT</li>
                     </ul>
                 </div>
-                <div class="vdo">
+                <!-- <div class="vdo">
                     <video loop autoplay muted>
                         <source src="../vdo/Krispy Kreme Donuts!.mp4" type="video/mp4">
                     </video>
+                </div> -->
+                <div class="mobile">
+                    <img src="../img/m_ahw.jpg" alt="mobile">
+                </div>
+                <div class="mockup">
+                    <img src="../img/mockup_ahw.jpg" alt="mockup">
                 </div>
             </div>
-            <div class="mobile">
-                <img src="../img/m_ahw.jpg" alt="mobile">
-            </div>
+            
         </div>
     </div>
 

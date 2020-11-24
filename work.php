@@ -11,7 +11,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="js/common.js"></script>
-    <script src="js/data_json.js"></script>
+    <!-- <script src="js/data_json.js"></script> -->
+    <script src="js/project_json.js"></script>
 </head>
 <body>
 

@@ -1,6 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Sujin Jeong - Portfolio</title>
     <link href="../css/common.css" rel="stylesheet" type="text/css">
     <link href="../css/project.css" rel="stylesheet" type="text/css">
@@ -63,13 +66,14 @@
                         <li>HTML5</li>
                         <li>CSS3</li>
                         <li>jQuery</li>
+                        <li>SCSS</li>
                     </ul>
                 </div>
                 <div class="solution">
                     <h3>SOLUTION</h3>
                     <dl>
                         <dt>UI / UX</dt>
-                        <dd>크리스피 크림 도넛에서 진행하는 이벤트 및 제품 이미지를 메인에 전면적으로 노출하여 브랜드 아이덴티티와 제품의 시즐감을 최대한 전달할 수 있는 매력적인 비주얼로 구성하였고, 사용자들이 원하는 콘텐츠를 빠르게 습득할 수 있는 UI/UX 개편으로 편의성을 추구하였다</dd>
+                        <dd>크리스피 크림 도넛에서 진행하는 이벤트 및 제품 이미지를 메인에 전면적으로 노출하여 브랜드 아이덴티티와 제품의 시즐감을 최대한 전달할 수 있는 매력적인 비주얼로 구성하였고, 사용자들이 원하는 콘텐츠를 빠르게 습득할 수 있는 UI/UX 개편으로 편의성을 추구하였다.</dd>
                         <dt>MONTH OF DONUTS</dt>
                         <dd>매월 출시되는 제품을 강조하기 위해서 사이트 상단에 슬라이드 레이어 추가하여 월별 홍보물 및 제품을 한 눈에 볼 수 있도록 구성하였다.</dd>
                         <dt>STORE / PROMOTION</dt>
@@ -83,14 +87,15 @@
                         <source src="../vdo/Krispy Kreme Donuts!.mp4" type="video/mp4">
                     </video>
                 </div>
+                <div class="mobile">
+                    <img src="../img/m_krispy.jpg" alt="mobile">
+                </div>
+                <div class="mockup">
+                    <img src="../img/mockups_krispy.jpg" alt="mockup">
+                    <img src="../img/ipad_krispy.jpg" alt="mockup">
+                </div>
             </div>
-            <div class="mobile">
-                <img src="../img/m_krispy.jpg" alt="mobile">
-            </div>
-            <div class="mockup">
-                <img src="../img/mockups_krispy.jpg" alt="mockup">
-                <img src="../img/ipad_krispy.jpg" alt="mockup">
-            </div>
+            
 
         </div>
     </div>

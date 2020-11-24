@@ -1,6 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Sujin Jeong - Portfolio</title>
     <link href="../css/common.css" rel="stylesheet" type="text/css">
     <link href="../css/project.css" rel="stylesheet" type="text/css">
@@ -50,9 +53,6 @@
                     <h3>RESPONSIVE WEB</h3>
                     <ul>
                         <li>1920px</li>
-                        <li>1024px</li>
-                        <li>768px</li>
-                        <li>480px</li>
                     </ul>
                 </div>
                 <div class="language">
@@ -62,6 +62,8 @@
                         <li>CSS3</li>
                         <li>jQuery</li>
                         <li>JAVASCRIPT</li>
+                        <li>ajax</li>
+                        <li>SCSS</li>
                     </ul>
                 </div>
                 <div class="solution">
@@ -76,13 +78,15 @@
                         각 콘텐츠에 적용된 애니메이션과 스크립트는 화려한 효과보다 콘텐츠의 집중도에 따라, 또는 콘텐츠의 이해를 도울 수 있는 포인트에만 적용하며 이용자들에게 사이트의 이용과 이해가 보다 용이하도록 작용한다.</dd>
                     </ul>
                 </div>
-                <div class="vdo">
+                <!-- <div class="vdo">
                     <video loop autoplay muted>
                         <source src="../vdo/Krispy Kreme Donuts!.mp4" type="video/mp4">
                     </video>
+                </div> -->
+                <div class="mockup">
+                    <img src="../img/mockup_yk.jpg" alt="mockup">
                 </div>
             </div>
-            <div class="mobile"></div>
         </div>
     </div>
 

@@ -12,6 +12,7 @@ main .project {
   height: 85vh;
   margin: 0 auto;
   border: 1px solid #e1e1e1;
+  overflow: hidden;
 }
 
 main .project .project_wrap {
@@ -152,13 +153,12 @@ main .project .project_wrap .project_txt .title {
   width: 80%;
   height: 100%;
   position: relative;
-  -webkit-clip-path: polygon(100% 0, 100% 100%, 0 58%, 0 37%);
-          clip-path: polygon(100% 0, 100% 100%, 0 58%, 0 37%);
+  overflow: hidden;
 }
 
 main .project .project_wrap .project_txt .title .title_wrap {
   width: 100%;
-  height: 100%;
+  height: 200%;
   -webkit-transition: .5s;
   transition: .5s;
 }
@@ -167,6 +167,7 @@ main .project .project_wrap .project_txt .title .title_wrap > p {
   display: block;
   -webkit-transition: .5s;
   transition: .5s;
+  white-space: nowrap;
 }
 
 main .project .project_wrap .project_txt .title .title_wrap > p:nth-of-type(1) {
@@ -245,5 +246,177 @@ main .project .project_wrap .project_img .img_wrap div:nth-of-type(3) {
 main .project .project_wrap .project_img .img_wrap div img {
   -webkit-transform: rotate(-5deg);
           transform: rotate(-5deg);
+}
+
+@media (max-width: 1440px) {
+  main .project .project_wrap .project_txt .title {
+    width: 90%;
+  }
+  main .project .project_wrap .project_txt .title .title_wrap > p > span {
+    display: inline-block;
+    font-size: 5rem;
+    color: #ff3636;
+    font-family: 'integral_cfheavy';
+    opacity: 1;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    -webkit-animation: animate .5s 1;
+            animation: animate .5s 1;
+  }
+  main .project .project_wrap .project_txt .title .title_wrap > p > span:nth-of-type(2n) {
+    -webkit-animation-delay: .2s;
+            animation-delay: .2s;
+  }
+  main .project .project_wrap .project_txt .title .title_wrap > p > span:nth-of-type(3n) {
+    -webkit-animation-delay: .2s;
+            animation-delay: .2s;
+  }
+  main .project .project_wrap .project_img .img_wrap div {
+    width: 40%;
+  }
+  main .project .project_wrap .project_img .img_wrap div:nth-of-type(1) {
+    top: 50%;
+  }
+  main .project .project_wrap .project_img .img_wrap div:nth-of-type(2) {
+    top: 150%;
+  }
+  main .project .project_wrap .project_img .img_wrap div:nth-of-type(3) {
+    top: 250%;
+  }
+  main .project .project_wrap .project_img .img_wrap div img {
+    width: 100%;
+    display: block;
+  }
+}
+
+@media (max-width: 1024px) {
+  main .project {
+    width: 95%;
+  }
+  main .project .project_wrap .project_txt .title {
+    width: 70%;
+  }
+  main .project .project_wrap .project_txt .title .title_wrap > p > span {
+    display: inline-block;
+    font-size: 3.5rem;
+    color: #ff3636;
+    font-family: 'integral_cfheavy';
+    opacity: 1;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    -webkit-animation: animate .5s 1;
+            animation: animate .5s 1;
+  }
+  main .project .project_wrap .project_txt .title .title_wrap > p > span:nth-of-type(2n) {
+    -webkit-animation-delay: .2s;
+            animation-delay: .2s;
+  }
+  main .project .project_wrap .project_txt .title .title_wrap > p > span:nth-of-type(3n) {
+    -webkit-animation-delay: .2s;
+            animation-delay: .2s;
+  }
+  main .project .project_wrap .project_img .img_wrap div {
+    width: 50%;
+    left: 30%;
+  }
+  main .project .project_wrap .project_img .img_wrap div img {
+    width: 100%;
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  main .project {
+    width: 95%;
+    border: 1px solid #e1e1e1;
+  }
+  main .project .project_wrap .project_txt {
+    left: 1%;
+  }
+  main .project .project_wrap .project_txt .label {
+    display: none;
+  }
+  main .project .project_wrap .project_txt .title {
+    width: 90%;
+  }
+  main .project .project_wrap .project_txt .title .title_wrap > p {
+    text-align: center;
+  }
+  main .project .project_wrap .project_txt .title .title_wrap > p > span {
+    display: inline-block;
+    font-size: 3rem;
+    color: #ff3636;
+    font-family: 'integral_cfheavy';
+    opacity: 1;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    -webkit-animation: animate .5s 1;
+            animation: animate .5s 1;
+  }
+  main .project .project_wrap .project_txt .title .title_wrap > p > span:nth-of-type(2n) {
+    -webkit-animation-delay: .2s;
+            animation-delay: .2s;
+  }
+  main .project .project_wrap .project_txt .title .title_wrap > p > span:nth-of-type(3n) {
+    -webkit-animation-delay: .2s;
+            animation-delay: .2s;
+  }
+  main .project .project_wrap .project_img .img_wrap div {
+    width: 60%;
+    left: 20%;
+  }
+  main .project .project_wrap .project_img .img_wrap div img {
+    width: 100%;
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  main .project {
+    width: 95%;
+    border: 1px solid #e1e1e1;
+  }
+  main .project .project_wrap .project_txt {
+    left: 0%;
+  }
+  main .project .project_wrap .project_txt .number {
+    display: none;
+  }
+  main .project .project_wrap .project_txt .label {
+    display: none;
+  }
+  main .project .project_wrap .project_txt .title {
+    width: 100%;
+  }
+  main .project .project_wrap .project_txt .title .title_wrap > p {
+    text-align: center;
+  }
+  main .project .project_wrap .project_txt .title .title_wrap > p > span {
+    display: inline-block;
+    font-size: 2.2rem;
+    color: #ff3636;
+    font-family: 'integral_cfheavy';
+    opacity: 1;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    -webkit-animation: animate .5s 1;
+            animation: animate .5s 1;
+  }
+  main .project .project_wrap .project_txt .title .title_wrap > p > span:nth-of-type(2n) {
+    -webkit-animation-delay: .2s;
+            animation-delay: .2s;
+  }
+  main .project .project_wrap .project_txt .title .title_wrap > p > span:nth-of-type(3n) {
+    -webkit-animation-delay: .2s;
+            animation-delay: .2s;
+  }
+  main .project .project_wrap .project_img .img_wrap div {
+    width: 80%;
+    left: 10%;
+  }
+  main .project .project_wrap .project_img .img_wrap div img {
+    width: 100%;
+    display: block;
+  }
 }
 /*# sourceMappingURL=work.css.map */

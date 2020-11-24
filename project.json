@@ -1,0 +1,58 @@
+{
+    "work":[
+            {   
+                "num":"1",
+                "tit":"KRISPYKREME",
+                "des":"RESPONSIVE WEB",
+                "topTitle":"KRISPYKREMEDOUGHNUTS",
+                "topImg":"img/project_krispy.jpg",
+                "url":"https://sueiz.github.io/krispykreme/",
+                "bodyTitle":"KrispyKreme Doughnuts",
+                "description":"크리스피크림 도넛은 미국의 도넛 체인점으로 모바일 환경과 SNS 트렌드에 맞춰 리뉴얼 할 필요성이 보였다. 인터넷 접속기기나 웹 브라우저에 상관없이 언제 어디서나 접속할 수 있는 접근성에 초점을 두었고, 제품 이미지부터 스토리를 담은 다양한 정보를 제공하고, SNS툴을 활용해 쉽게 공유할 수 있도록 퍼블리싱 하였다. 또한 주요 콘텐츠 항목을 아이콘 심볼을 통해 소비자들이 한 눈에 볼 수 있도록 기획, 설계하였다.",
+                "period": "2020.10.23 ~ 2020.10.30",
+                "role": "WEB PUBLISHING 100%",
+                "sitemap": "ONLINE STORE, MENU, EVENT, STORE, BRAND",
+                "repsonsive": "1920px, 1024px, 768px, 480px",
+                "language": "HTML5, CSS3, jQuery, SCSS",
+                "solution":"",
+                "vdo": "vdo/Krispy Kreme Donuts!.mp4",
+                "mobileImg": "img/m_krispy.jpg",
+                "mockupImg": "img/mockups_krispy.jpg"
+            },
+            {
+                "num":"2",
+                "tit":"YUHAN KIMBERLY",
+                "des":"ONLY PC WEB",
+                "topTitle":"YUHANKIMBERLY",
+                "topImg":"img/project_yuhankimberly.jpg",
+                "url":"https://sueiz.github.io/yuhan_kimberly/",
+                "bodyTitle":"Yuhan-Kimberly",
+                "description":"유한킴벌리는 1970년 설립되어 올해 50주년을 맞이하였고 한국의 유한양행과 미국의 킴벌리클라크가 합작해서 만든 대한민국의생활용품업체이다. ‘초일류생활혁신 기업’의 경영목표와 더 나은 생활을 향한 믿음을 바탕으로 우수한 제품, 서비스, 환경을 제공함으로써 고객에게 가치 있는 기업을 목표로 혁신적인 사고와, 동반성장, 나눔의 기업문화를 중심으로 성장하고 있다. 이러한 유한킴벌리 기업 사이트 리뉴얼은 유한킴벌리의 아이덴티티와 기업의 역할, 목표를 안내하고 유한킴벌리만의 기업문화를 웹으로 표현하는 프로젝트이다.",
+                "period": "2020.09.01 ~ 2020.09.21",
+                "role": "DESIGN 100% + WEB PUBLISHING 100%",
+                "sitemap": "기업소개, 지속경영, 고객지원, 미디어룸",
+                "repsonsive": "1920px",
+                "language": "HTML5, CSS3, jQuery, JAVASCRIPT, ajax, SCSS",
+                "solution": "",
+                "mockupImg": "img/mockups_yk.jpg"
+            },
+            {
+                
+                "num":"3",
+                "tit":"AT HOME WORKOUTS",
+                "des":"RESPONSIVE WEB",
+                "topTitle":"ATHOMEWORKOUTS",
+                "topImg":"img/project_workouts.jpg",
+                "url":"https://sueiz.github.io/at_home_workouts/",
+                "bodyTitle":"at Home Workouts",
+                "description":"이용자들이 집에서도 퀄리티있고 편리하게 운동을 하기 위해 Online Personal Traning을 수강하며 일대일 소통을 통해 더 건강한 삶을 가지자는 모토를 가진 at home workouts은 중요 이미지와 텍스트만 사용하여 최대한 간소화하였고 포인트 컬러를 주어 통일감을 부여한 웹 사이트이다.",
+                "period": "2020.07.01 ~ 2020.07.14",
+                "role": "WEB PUBLISHING 50%",
+                "sitemap": "ABOUT, WORKOUT, EVENT, MY PAGE, SHOP",
+                "repsonsive": "1920px, 1024px, 768px, 480px",
+                "language": "HTML5, CSS3, jQuery, JAVASCRIPT",
+                "mobileImg": "img/m_ahw.jpg",
+                "mockupImg": "img/mockup_ahw.jpg"
+            }
+        ]    
+}

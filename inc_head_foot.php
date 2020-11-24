@@ -10,6 +10,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="js/common.js"></script>
+    <script src="js/project_json.js"></script>
 </head>
 <body>
 <header>
@@ -40,8 +41,8 @@
 <div class="slide_menu">
     <div class="inner">
         <ul>
-            <li><a href='work.php' class="menu_eng">Work.<h4>(AND PLAY)</h4></a></li>
-            <li><a href='about.php' class="menu_eng">About.<h4>JEONGSUJIN</h4></a></li>
+            <li><a href='/work.php' class="menu_eng">Work.<h4>(AND PLAY)</h4></a></li>
+            <li><a href='/about.php' class="menu_eng">About.<h4>JEONGSUJIN</h4></a></li>
             <li><a href='#' class="menu_eng">Contact.<h4>I'D LOVE TO HEAR FROM YOU</h4></a></li>
         </ul>
         <a href='#' class="close_btn">
@@ -61,15 +62,15 @@
 <div class="projects_wrap">
     <div class="projects">
         <div class="project_title">
-            <a href='../project/krispykreme.php'><h2 class="krispy title_eng">KRISPY KREME DOUGHNUT
+            <!-- <a href='/project/krispykreme.php'><h2 class="krispy title_eng">KRISPY KREME DOUGHNUT
                 <img src="/img/project_krispy.jpg" alt="krispy">
             </h2></a>
-            <a href='../project/yuhankimberly.php'><h2 class="yk title_eng">YUHAN KIMBERLY
+            <a href='/project/yuhankimberly.php'><h2 class="yk title_eng">YUHAN KIMBERLY
                 <img src="/img/project_yuhankimberly.jpg" alt="yuhankimberly">
             </h2></a>
-            <a href='../project/athomeworkouts.php'><h2 class="ahw title_eng">AT HOME WORKOUTS
+            <a href='/project/athomeworkouts.php'><h2 class="ahw title_eng">AT HOME WORKOUTS
                 <img src="/img/project_workouts.jpg" alt="athomeworkouts">
-            </h2></a>
+            </h2></a> -->
         </div>
     </div>
 </div>
@@ -86,8 +87,13 @@
                         <h2>Jeong Sujin</h2>
                         <p>010. 9060. 0771</p>
                         <p>sueiz0770@gmail.com</p>
+                        <a href='https://github.com/sueiz' target="_black">https://github.com/sueiz</a>
                     </div>
-                    <form action="../php/contact_request.php" method="">
+                    <div class="txt">
+                        <h2>감사합니다. 빠른 시일내에 연락 드리겠습니다. </h2>
+                        <a href='#'><p>닫기</p></a>
+                    </div>  
+                    <form action="php/contact_request.php" method="">
                         <table>
                             <tr><td><input type="text" name="name" placeholder="Your Name"></td></tr>
                             <tr><td><input type="email" name="email" placeholder="Your Mail"></td></tr>
@@ -108,8 +114,6 @@
             </a>
         </div>
     </div>
-    
-    
 </div>
 
 </body>

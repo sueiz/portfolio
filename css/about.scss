@@ -132,7 +132,7 @@ main {
             .introduce {
                 flex: 2;
                 overflow: hidden;
-                margin: 15vh auto;
+                margin: 15vh auto 0;
                 h2 {
                     @extend %aboutTit;
                     transform: translateX(-500px);
@@ -286,8 +286,8 @@ main {
     }
 }
 
-/*
-@media (min-width: 1440px) {
+
+@media (max-width: 1440px) {
     main {
         .about_wrap {
             .inner {
@@ -314,4 +314,83 @@ main {
         }
     }
 }
-*/
+
+@media (max-width: 1024px) {
+    main {
+        .about_wrap {
+            .line {
+                div {
+                    border: none;
+                    &:nth-of-type(3) {
+                        border-right: 1px solid #e1e1e1;
+                    }
+                }
+            }
+            .inner {
+                .vdo_mask {
+                    display: none;
+                }
+                .introduce {
+                    margin-left: 1rem;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    main {
+        .about_wrap {
+            width: 100%;
+            height: auto;
+            overflow: visible;
+            .line {
+                div {
+                    border: none;
+                    &:nth-of-type(3) {
+                        border-right: 1px solid #e1e1e1;
+                    }
+                }
+            }
+            .inner {
+                .vdo_mask {
+                    display: none;
+                }
+                .introduce {
+                    margin-left: 1rem;
+                    margin-top: 5vh;
+                }
+                .skills {
+                    margin-top: 5vh;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        .about_wrap {
+            width: 100%;
+            height: auto;
+            overflow: visible;
+            .line {
+                display: none;
+            }
+            .inner {
+                display: block;
+                .vdo_mask {
+                    display: none;
+                }
+                .introduce {
+                    margin-left: 1rem;
+                    margin-top: 5vh;
+                }
+                .skills {
+                    margin-top: 5vh;
+                }
+            }
+        }
+    }
+}

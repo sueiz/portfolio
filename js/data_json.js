@@ -27,17 +27,14 @@ $(function () {
                     label += "<div><p class='label_number'>0" + num + "</p><p class='label_tit'>" + tit + "</p></div>";
                     label += "<p>" + description + "</p></div>";
                     title += "<p>" + tit + "</p>";
-                    image += "<div>"
-                    image += "<img src='" + imgSrc + "' alt='krispykreme'></div></div>";
+                    image += "<div><a href='"+ url +"' target='_black'>"
+                    image += "<img src='" + imgSrc + "' alt='krispykreme'></a></div></div>";
                 })
 
                 $('.page p').append(number);
                 $('.label_wrap').append(label);
                 $('.title_wrap').append(title);
                 $('.img_wrap').append(image);
-
-            
-
 
                 /* title span */
                 var text = document.querySelectorAll(".title_wrap p");
@@ -63,8 +60,6 @@ $(function () {
                 var labelNum = document.querySelectorAll('.label_number');
                 var labelTit = document.querySelectorAll('.label_tit')
                
-                
-            
                 var i = 0;
                 var bln = false;
             
@@ -78,7 +73,6 @@ $(function () {
                             projectMove.style.transform = "translateY(0%)";
                             txtMove.style.transform = "translateY(0)"
                             titMove.style.transform = "translateY(0%)"
-                            
                             labelMove.style.transform = "translateY(0)"
                             return;
                         }
@@ -120,13 +114,7 @@ $(function () {
                     }
                     bln = true;
                     setTimeout(function(){bln=false},500);
-
-                    
                 }
-
-                
-            
-            
             }
             fun();
         }

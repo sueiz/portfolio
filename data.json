@@ -3,10 +3,10 @@
         {
             "code":"project01",
             "num":"1",
-            "tit":"KRISPY KREME DONUTS",
+            "tit":"KRISPY KREME",
             "description":"RESPONSIVE WEB",
             "imgSrc":"img/project_krispy.jpg",
-            "url":"https://front.wemakeprice.com/deal/605312466"
+            "url":"https://sueiz.github.io/krispykreme/"
         },
         {
             "code":"project02",
@@ -14,7 +14,7 @@
             "tit":"YUHAN KIMBERLY",
             "description":"RESPONSIVE WEB",
             "imgSrc":"img/project_yuhankimberly.jpg",
-            "url":"https://front.wemakeprice.com/deal/605312466"
+            "url":"https://sueiz.github.io/yuhan_kimberly/"
         },
         {
             "code":"project03",
@@ -22,7 +22,7 @@
             "tit":"AT HOME WORKOUTS",
             "description":"RESPONSIVE WEB",
             "imgSrc":"img/project_workouts.jpg",
-            "url":"https://front.wemakeprice.com/deal/605312466"
+            "url":"https://sueiz.github.io/at_home_workouts/"
         }
     ]
 }

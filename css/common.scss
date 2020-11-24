@@ -40,7 +40,6 @@
     font-size: 6.5rem;
     color: #ff3636;
     letter-spacing: 5px;
-    text-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
 }
 html {scroll-behavior:smooth;}
 
@@ -146,6 +145,7 @@ header {
             width: 26px; height: 16px;
             position: relative;
             margin: 15px 0 0 0;
+            display: none;
             span {
                 display: inline-block;
                 position: absolute;
@@ -295,7 +295,6 @@ header {
     left: -100%; top: 0;
     z-index: 998;
     transition: left .5s;
-    // display: none;
     .projects {
         width: 100%;
         margin: 25vh 5vw;
@@ -303,6 +302,11 @@ header {
             transform: rotate(-7deg);
             h2 {
                 white-space: nowrap;
+                font-family: 'integral_cfheavy';
+                font-size: 6.5rem;
+                color: #ff3636;
+                letter-spacing: 5px;
+                text-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
                 img {
                     transform: rotate(0deg);
                     display: none;
@@ -371,7 +375,7 @@ header {
     backdrop-filter: blur(5px);
     z-index: 1099;
     .popup_wrap {
-        width: 30%;
+        width: 25%;
         position: absolute;
         z-index: 1000;
         left: 50%; top: 50%;
@@ -407,15 +411,32 @@ header {
                             line-height: 3;
                             font-size: .7em;
                         }
-                        p {
+                        p,a {
                             font-family: 'Montserrat', sans-serif;
                             font-size: .7em;
                             font-weight: 100;
                             color: #333;
                         }
                     }
+                    .txt {
+                        display: none;
+                        &.active {
+                            display: block;
+                        }
+                        h2 {
+                            margin: 0 auto 2rem;
+                            text-align: center;
+                        }
+                        a {
+                            p {
+                                font-size: .8em;
+                                text-align: center;
+                                color: #ff3636;
+                            }
+                        }
+                    }
                     form {
-                        width: 70%;
+                        width: 80%;
                         margin: 0 auto;
                         overflow: hidden;
                         table {
@@ -478,10 +499,96 @@ header {
 }
 
 @media (min-width: 1440px) {
-
     *{
         font-size: 16px;
     }
 }
 
+@media (max-width: 1024px) {
+    header {
+        div {
+            .headerLeft {
+                width: 40%;
+            }
+            .back_btn {
+                width: 10%;
+            }
+        }
+    }
+    .projects_wrap {
+        .projects {
+            margin: 30vh 5vw;
+            .project_title {
+                h2 {
+                    font-size: 3.5em;
+                }
+                
+            }
+        }
+    }
+    .project_list {
+        display: none;
+    }
+    .popup_contact {
+        .popup_wrap {
+            width: 50%;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        div {
+            .headerLeft {
+                width: 60%;
+            }
+        }
+    }
+    .projects_wrap {
+        .projects {
+            margin: 30vh 5vw;
+            .project_title {
+                h2 {
+                    font-size: 2.5em;
+                }
+                
+            }
+        }
+    }
+    .popup_contact {
+        .popup_wrap {
+            width: 60%;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        div {
+            .headerLeft {
+                width: 70%;
+            }
+        }
+    }
+    .projects_wrap {
+        .projects {
+            margin: 30vh 1vw;
+            .project_title {
+                transform: rotate(-7deg);
+                h2 {
+                    text-align: center;
+                    font-size: 1.5em;
+                    width: 100%;
+                    margin-bottom: 1vh;
+                }
+                
+            }
+        }
+    }
+    .popup_contact {
+        .popup_wrap {
+            width: 80%;
+        }
+    }
+}
 

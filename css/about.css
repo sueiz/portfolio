@@ -212,7 +212,7 @@ main .about_wrap .inner .introduce {
       -ms-flex: 2;
           flex: 2;
   overflow: hidden;
-  margin: 15vh auto;
+  margin: 15vh auto 0;
 }
 
 main .about_wrap .inner .introduce h2 {
@@ -397,33 +397,84 @@ main .about_wrap .line div:nth-of-type(6) {
   border: none;
 }
 
-/*
-@media (min-width: 1440px) {
-    main {
-        .about_wrap {
-            .inner {
-                .vdo_mask {
-                    .vdo_bg {
-                        margin: 4rem;
-                    }
-                    .svg {
-                        transform: scale(0.75);
-                        defs {}
-                        mask {
-                            path {
-                                width: 80%;
-                                height: 80%;
-                            }
-                            rect {}
-                        }
-                        .st0 {
-                            width: 80%; height: 80%;
-                        }
-                    }
-                }
-            }
-        }
-    }
+@media (max-width: 1440px) {
+  main .about_wrap .inner .vdo_mask .vdo_bg {
+    margin: 4rem;
+  }
+  main .about_wrap .inner .vdo_mask .svg {
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+  }
+  main .about_wrap .inner .vdo_mask .svg mask path {
+    width: 80%;
+    height: 80%;
+  }
+  main .about_wrap .inner .vdo_mask .svg .st0 {
+    width: 80%;
+    height: 80%;
+  }
 }
-*/
+
+@media (max-width: 1024px) {
+  main .about_wrap .line div {
+    border: none;
+  }
+  main .about_wrap .line div:nth-of-type(3) {
+    border-right: 1px solid #e1e1e1;
+  }
+  main .about_wrap .inner .vdo_mask {
+    display: none;
+  }
+  main .about_wrap .inner .introduce {
+    margin-left: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  main .about_wrap {
+    width: 100%;
+    height: auto;
+    overflow: visible;
+  }
+  main .about_wrap .line div {
+    border: none;
+  }
+  main .about_wrap .line div:nth-of-type(3) {
+    border-right: 1px solid #e1e1e1;
+  }
+  main .about_wrap .inner .vdo_mask {
+    display: none;
+  }
+  main .about_wrap .inner .introduce {
+    margin-left: 1rem;
+    margin-top: 5vh;
+  }
+  main .about_wrap .inner .skills {
+    margin-top: 5vh;
+  }
+}
+
+@media (max-width: 480px) {
+  main .about_wrap {
+    width: 100%;
+    height: auto;
+    overflow: visible;
+  }
+  main .about_wrap .line {
+    display: none;
+  }
+  main .about_wrap .inner {
+    display: block;
+  }
+  main .about_wrap .inner .vdo_mask {
+    display: none;
+  }
+  main .about_wrap .inner .introduce {
+    margin-left: 1rem;
+    margin-top: 5vh;
+  }
+  main .about_wrap .inner .skills {
+    margin-top: 5vh;
+  }
+}
 /*# sourceMappingURL=about.css.map */
