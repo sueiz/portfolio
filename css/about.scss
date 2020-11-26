@@ -210,7 +210,6 @@ main {
                             animation: show 1s forwards;
                             animation-delay: 1.6s;
                         }
-                        
                         width: 40%;
                         display: inline-block;
                         margin-right: 10%;
@@ -246,7 +245,6 @@ main {
                                     }
                                 }
                             }
-                            
                             
                             dd {
                                 font-size: .8em;
@@ -340,29 +338,54 @@ main {
 
 
 @media (max-width: 768px) {
+    body {
+        overflow: visible;
+    }
     main {
         .about_wrap {
             width: 100%;
+            border: none;
             height: auto;
             overflow: visible;
             .line {
-                div {
-                    border: none;
-                    &:nth-of-type(3) {
-                        border-right: 1px solid #e1e1e1;
-                    }
-                }
+                display: none;
             }
             .inner {
+                display: block;
+                width: 100%;
                 .vdo_mask {
                     display: none;
                 }
                 .introduce {
-                    margin-left: 1rem;
-                    margin-top: 5vh;
+                    margin: 5vh auto;
+                    h2 {
+                        text-align: center;
+                    }
+                    div {
+                        text-align: center;
+                    }
                 }
                 .skills {
                     margin-top: 5vh;
+                    h2 {
+                        text-align: center;
+                    }
+                    ul {
+                        width: 100%;
+                        margin: 0 0 0 10vw;
+                        li {
+                            
+                            dl {
+                                margin: 0 auto;
+                                dt {
+                                    // text-align: center;
+                                    dd {
+
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -370,6 +393,9 @@ main {
 }
 
 @media (max-width: 480px) {
+    body {
+        overflow: visible;
+    }
     main {
         .about_wrap {
             width: 100%;
@@ -389,6 +415,26 @@ main {
                 }
                 .skills {
                     margin-top: 5vh;
+                    ul {
+                        width: 100%;
+                        margin-left: 0vw;
+                        li {
+                            margin: 0 auto;
+                            width: 100%;
+                            margin-right: 0;
+                            display: block;
+                            dl {
+                                
+                                dt {
+                                    text-align: center;
+                                }
+                                dd {
+                                    width: 50%;
+                                    margin: 0 auto .5rem;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

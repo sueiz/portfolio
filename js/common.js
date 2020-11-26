@@ -51,10 +51,8 @@ $(function(){
             $('.gnb ul li').addClass('active');
             
             if (window.location.pathname == '/work.php') {
-                $('.menu-trigger').css('display','none');
                 $('.back_btn').css('display','block');
             }else{
-                $('.menu-trigger').css('display','none');
                 $('.back_btn').css('display','block');
                 $('body').addClass('active');
             }
@@ -66,36 +64,37 @@ $(function(){
             $('.logo').removeClass('active');
             $('.gnb ul li').removeClass('active');
             if (window.location.pathname == '/work.php') {
-                // $('.menu-trigger').css('display','block');
                 $('.back_btn').css('display','none');
             }else{
-                // $('.menu-trigger').css('display','none');
+                $('.back_btn').css('display','none');
                 $('body').removeClass('active');
             }
         });
 
         /* 버튼 배경색 */
         function btnColor() {
-            if (window.location.pathname == '/project/krispykreme.php') {
+            if (window.location.pathname == '/project.php' && localStorage.pageNum == '0') {
                 $('.btn p').css('background','#e9e9eb');
-            }else if (window.location.pathname == '/project/yuhankimberly.php') {
+            }else if (window.location.pathname == '/project.php' && localStorage.pageNum == '1') {
                 $('.btn p').css('background','#ffe081');
-            }else if (window.location.pathname == '/project/athomeworkouts.php') {
+            }else if (window.location.pathname == '/project.php' && localStorage.pageNum == '2') {
                 $('.btn p').css('background','#E1DFD6');
             }
         }
         btnColor();
         function scrollColor(){
-            $(window).on('scroll',function(){
-                var bodyTop = $('.project_wrap .body').offset().top;
-                var btnTop = $('.btn p').offset().top;
-    
-                if (bodyTop < btnTop) {
-                    $('.btn p').css('background','#fff');
-                }else {
-                    btnColor();
-                }
-            });
+            if (window.location.pathname == '/project.php') {
+                $(window).on('scroll',function(){
+                    var bodyTop = $('.project_wrap .body').offset().top;
+                    var btnTop = $('.btn p').offset().top;
+        
+                    if (bodyTop < btnTop) {
+                        $('.btn p').css('background','#fff');
+                    }else {
+                        btnColor();
+                    }
+                });
+            }
         }
         scrollColor();
     }

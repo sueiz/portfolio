@@ -11,6 +11,7 @@
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="js/common.js"></script>
     <script src="js/about.js"></script>
+    <!-- <script src="js/project_json.js"></script> -->
 </head>
 <body>
 
@@ -142,7 +143,12 @@
                 </div>
         </div>
     </div>
+    <!-- <a href='#' class="project_list">
+    </a> -->
 </main>
+
+<!-- <div class="projects_wrap">
+</div> -->
 
 <div class="popup_contact">
 </div>

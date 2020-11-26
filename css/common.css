@@ -125,10 +125,10 @@ header div .headerLeft .logo::after {
   background: #ff3636;
   border-radius: 100%;
   position: absolute;
-  left: 30%;
+  left: 32%;
   top: 50%;
-  -webkit-transform: translate(-30%, -50%);
-          transform: translate(-30%, -50%);
+  -webkit-transform: translate(-32%, -50%);
+          transform: translate(-32%, -50%);
   -webkit-transition: 1s ease-in-out;
   transition: 1s ease-in-out;
 }
@@ -626,9 +626,9 @@ header div .back_btn a {
           transform: translateY(0) rotate(45deg);
 }
 
-@media (min-width: 1440px) {
-  * {
-    font-size: 16px;
+@media (max-width: 1500px) {
+  header div .headerLeft {
+    width: 30%;
   }
 }
 

@@ -1,8 +1,7 @@
 $(function () {
     var txt = document.querySelector('.scrolling_text');
     var img = document.querySelector('.rotate_img img');
-    console.log(txt);
-    console.log(img);
+
 
     var i = 0;
     var bln = false;
@@ -36,6 +35,4 @@ $(function () {
         bln = true;
         setTimeout(function(){bln=false},500);
     }
-
-    /* 프로젝트 리스트 버튼 */
 });

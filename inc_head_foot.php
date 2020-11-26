@@ -59,21 +59,7 @@
     </div>
 </a>
 
-<div class="projects_wrap">
-    <div class="projects">
-        <div class="project_title">
-            <!-- <a href='/project/krispykreme.php'><h2 class="krispy title_eng">KRISPY KREME DOUGHNUT
-                <img src="/img/project_krispy.jpg" alt="krispy">
-            </h2></a>
-            <a href='/project/yuhankimberly.php'><h2 class="yk title_eng">YUHAN KIMBERLY
-                <img src="/img/project_yuhankimberly.jpg" alt="yuhankimberly">
-            </h2></a>
-            <a href='/project/athomeworkouts.php'><h2 class="ahw title_eng">AT HOME WORKOUTS
-                <img src="/img/project_workouts.jpg" alt="athomeworkouts">
-            </h2></a> -->
-        </div>
-    </div>
-</div>
+
 
 <div class="popup_contact">
     <div class="popup_wrap">

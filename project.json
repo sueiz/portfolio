@@ -12,12 +12,16 @@
                 "period": "2020.10.23 ~ 2020.10.30",
                 "role": "WEB PUBLISHING 100%",
                 "sitemap": "ONLINE STORE, MENU, EVENT, STORE, BRAND",
-                "repsonsive": "1920px, 1024px, 768px, 480px",
+                "responsive": "1920px, 1024px, 768px, 480px",
                 "language": "HTML5, CSS3, jQuery, SCSS",
-                "solution":"",
-                "vdo": "vdo/Krispy Kreme Donuts!.mp4",
-                "mobileImg": "img/m_krispy.jpg",
-                "mockupImg": "img/mockups_krispy.jpg"
+                "solution":[
+                    ["UI / UX","크리스피 크림 도넛에서 진행하는 이벤트 및 제품 이미지를 메인에 전면적으로 노출하여 브랜드 아이덴티티와 제품의 시즐감을 최대한 전달할 수 있는 매력적인 비주얼로 구성하였고, 사용자들이 원하는 콘텐츠를 빠르게 습득할 수 있는 UI/UX 개편으로 편의성을 추구하였다"],
+                    ["MONTH OF DONUTS","매월 출시되는 제품을 강조하기 위해서 사이트 상단에 슬라이드 레이어 추가하여 월별 홍보물 및 제품을 한 눈에 볼 수 있도록 구성하였다."],
+                    ["STORE / PROMOTION","매장 위치 제공 및 진행 중인 프로모션 등을 반영하여 사용자 편의를 제공했으며, 매월 다양한 프로모션이 진행중이기 때문에 대표 비주얼 및 중요 내용이 리스트 상에서 보여질 수 있도록 구성하여 사용자들이 방문 시 참고할 수 있도록 하였다."],
+                    ["VISUAL","기존의 아기자기한 느낌을 탈피하고 다양한 연령층을 만족시킬 수 있는 톤앤매너의 디자인으로 탈바꿈하여 더욱 신선하고 생생한 느낌을 준다."]
+                ],
+                "vdo": "vdo/krispykreme.mp4",
+                "mockupImg": ["img/m_krispy.jpg","img/mockups_krispy.jpg"]
             },
             {
                 "num":"2",
@@ -31,13 +35,15 @@
                 "period": "2020.09.01 ~ 2020.09.21",
                 "role": "DESIGN 100% + WEB PUBLISHING 100%",
                 "sitemap": "기업소개, 지속경영, 고객지원, 미디어룸",
-                "repsonsive": "1920px",
+                "responsive": "1920px",
                 "language": "HTML5, CSS3, jQuery, JAVASCRIPT, ajax, SCSS",
-                "solution": "",
-                "mockupImg": "img/mockups_yk.jpg"
+                "solution": [
+                    ["DESIGN / VISUAL","기업의 핵심 가치 중 하나는 신뢰와 배려이다. 웹에서 이를 표현할 수 있도록 생생한 현장을 담은 이미지를 각 콘텐츠마다 위치하였고, 텍스트와 이미지의 균형을 맞추어 사용자에게 안정감을 줄 수 있는 레이아웃과 콘텐츠 화면을 구성하였다. 또한 애니메이션 및 스크립트 적용에 속도감 있는 액션을 표현했다."],["CONTENTS / SERVICE","주업인 제조업과 유통업, 글로벌 허브로서의 유한킴벌리를 잘 표현할 수 있도록 퀵 링크 베이스의 허브서비스와 각 콘텐츠에서 쇼핑몰, SNS, 미디어 룸으로 연결될 수 있도록 하였다."],["UI / UX","각 콘텐츠에 적용된 애니메이션과 스크립트는 화려한 효과보다 콘텐츠의 집중도에 따라, 또는 콘텐츠의 이해를 도울 수 있는 포인트에만 적용하며 이용자들에게 사이트의 이용과 이해가 보다 용이하도록 작용한다."]
+                ],
+                "vdo": "vdo/yuhankimberly.mp4",
+                "mockupImg": ["img/mockup_yk.jpg"]
             },
             {
-                
                 "num":"3",
                 "tit":"AT HOME WORKOUTS",
                 "des":"RESPONSIVE WEB",
@@ -49,10 +55,13 @@
                 "period": "2020.07.01 ~ 2020.07.14",
                 "role": "WEB PUBLISHING 50%",
                 "sitemap": "ABOUT, WORKOUT, EVENT, MY PAGE, SHOP",
-                "repsonsive": "1920px, 1024px, 768px, 480px",
+                "responsive": "1920px, 1024px, 768px, 480px",
                 "language": "HTML5, CSS3, jQuery, JAVASCRIPT",
-                "mobileImg": "img/m_ahw.jpg",
-                "mockupImg": "img/mockup_ahw.jpg"
+                "solution": [
+                    ["PC / MOBILE","반응형 웹 구축으로 유연하고 빠르게 최적화된 정보 전달하였다."]
+                ],
+                "vdo": "vdo/athomeworkouts.mp4",
+                "mockupImg": ["img/m_ahw.jpg", "img/mockup_ahw.jpg"]
             }
         ]    
 }

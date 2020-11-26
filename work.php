@@ -11,7 +11,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="js/common.js"></script>
-    <!-- <script src="js/data_json.js"></script> -->
     <script src="js/project_json.js"></script>
 </head>
 <body>
@@ -46,16 +45,23 @@
 </main>
 
 <div class="projects_wrap">
+    <div class="projects">
+        <div class="project_title">
+            <!-- <a href='/project/krispykreme.php'><h2 class="krispy title_eng">KRISPY KREME DOUGHNUT
+                <img src="/img/project_krispy.jpg" alt="krispy">
+            </h2></a>
+            <a href='/project/yuhankimberly.php'><h2 class="yk title_eng">YUHAN KIMBERLY
+                <img src="/img/project_yuhankimberly.jpg" alt="yuhankimberly">
+            </h2></a>
+            <a href='/project/athomeworkouts.php'><h2 class="ahw title_eng">AT HOME WORKOUTS
+                <img src="/img/project_workouts.jpg" alt="athomeworkouts">
+            </h2></a> -->
+        </div>
+    </div>
 </div>
 
 <div class="popup_contact">
 </div>
 
-<script>
-
-    console.log(location.pathname);
-
-    </script>
-    
 </body>
 </html>

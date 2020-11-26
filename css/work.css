@@ -91,6 +91,36 @@ main .project .project_wrap .project_txt .label {
 main .project .project_wrap .project_txt .label .label_wrap {
   -webkit-transition: .5s;
   transition: .5s;
+  opacity: 1;
+}
+
+main .project .project_wrap .project_txt .label .label_wrap.active {
+  -webkit-animation: ani 1s forwards;
+          animation: ani 1s forwards;
+}
+
+@-webkit-keyframes ani {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes ani {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 main .project .project_wrap .project_txt .label .label_wrap > div > div::after {
@@ -143,6 +173,7 @@ main .project .project_wrap .project_txt .label .label_wrap > div > p {
   opacity: 1;
   -webkit-transition: .5s;
   transition: .5s;
+  white-space: nowrap;
 }
 
 main .project .project_wrap .project_txt .label .label_wrap > div > p.fade {
@@ -292,6 +323,10 @@ main .project .project_wrap .project_img .img_wrap div img {
 @media (max-width: 1024px) {
   main .project {
     width: 95%;
+    border: none;
+  }
+  main .project .project_wrap .project_txt {
+    left: 1%;
   }
   main .project .project_wrap .project_txt .title {
     width: 70%;
@@ -328,16 +363,16 @@ main .project .project_wrap .project_img .img_wrap div img {
 @media (max-width: 768px) {
   main .project {
     width: 95%;
-    border: 1px solid #e1e1e1;
+    border: none;
   }
   main .project .project_wrap .project_txt {
     left: 1%;
   }
-  main .project .project_wrap .project_txt .label {
+  main .project .project_wrap .project_txt .number {
     display: none;
   }
   main .project .project_wrap .project_txt .title {
-    width: 90%;
+    width: 85%;
   }
   main .project .project_wrap .project_txt .title .title_wrap > p {
     text-align: center;
@@ -374,7 +409,7 @@ main .project .project_wrap .project_img .img_wrap div img {
 @media (max-width: 480px) {
   main .project {
     width: 95%;
-    border: 1px solid #e1e1e1;
+    border: none;
   }
   main .project .project_wrap .project_txt {
     left: 0%;

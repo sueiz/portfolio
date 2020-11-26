@@ -26,7 +26,7 @@ header div .menu-trigger {
 }
 
 header div .back_btn {
-  display: block;
+  display: none;
 }
 
 main {
@@ -161,6 +161,7 @@ main .project_wrap .body .content .sitemap ul li, main .project_wrap .body .cont
   border: 1px solid #e9e9eb;
   padding: .5rem 1rem;
   font-size: .8em;
+  margin-bottom: .5rem;
 }
 
 main .project_wrap .body .content .solution dl dt {
@@ -232,9 +233,26 @@ main .project_wrap .body .content .mockup img {
   main .project_wrap .body .content {
     width: 90%;
   }
+  main .project_wrap .body .content div {
+    display: block;
+    margin-bottom: 2rem;
+  }
+  main .project_wrap .body .content div h3 {
+    display: block;
+    margin-bottom: 1rem;
+  }
+  main .project_wrap .body .content div p, main .project_wrap .body .content div ul {
+    display: block;
+  }
+  main .project_wrap .body .content div p li, main .project_wrap .body .content div ul li {
+    margin-bottom: .5rem;
+  }
 }
 
 @media (max-width: 480px) {
+  main .project_wrap .top {
+    height: 100vh;
+  }
   main .project_wrap .top .scrolling_text {
     vertical-align: top;
   }
@@ -242,7 +260,7 @@ main .project_wrap .body .content .mockup img {
     font-size: 8em;
   }
   main .project_wrap .top .rotate_img {
-    width: 30%;
+    width: 25%;
     left: 50vw;
     top: 35%;
     -webkit-transform: translate(-50%, -35%);
@@ -252,7 +270,7 @@ main .project_wrap .body .content .mockup img {
     width: 100%;
   }
   main .project_wrap .body .content {
-    width: 100%;
+    width: 95%;
   }
   main .project_wrap .body .content .title {
     width: 100%;
@@ -272,7 +290,7 @@ main .project_wrap .body .content .mockup img {
     display: inline-block;
     margin-right: 1rem;
     border: 1px solid #e1e1e1;
-    padding: 0.2rem;
+    padding: .5rem 1rem;
     font-size: .8em;
   }
 }

@@ -18,7 +18,7 @@
     <div>
         <div class="main_title">
             <h1>
-                <span class="title_eng">WEBPUBLISHER JEONG SUJIN
+                <span>WEBPUBLISHER JEONG SUJIN
                 </span>
             </h1>
         </div>

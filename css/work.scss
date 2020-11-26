@@ -62,6 +62,15 @@ main {
                     position: relative;
                     .label_wrap {
                         transition: .5s;
+                        opacity: 1;
+                        &.active {
+                            animation: ani 1s forwards;
+                        }
+                        @keyframes ani {
+                            0% { opacity:1; }
+                            50% { opacity:0; }
+                            100% { opacity:1; }
+                        }
                         > div {
                             > div {
                                 &::after {
@@ -105,12 +114,11 @@ main {
                                 color: #999;
                                 opacity: 1;
                                 transition: .5s;
+                                white-space: nowrap;
                                 &.fade {
                                     opacity: 1;
                                 }
                             }
-                            
-                            
                         }
                         
                     }
@@ -251,8 +259,10 @@ main {
     main {
         .project {
             width: 95%;
+            border: none;
             .project_wrap {
                 .project_txt {
+                    left: 1%;
                     .title {
                         width: 70%;
                         .title_wrap {
@@ -298,15 +308,16 @@ main {
     main {
         .project {
             width: 95%;
-            border: 1px solid #e1e1e1;
+            border: none;
             .project_wrap {
                 .project_txt {
+                    // display: block;
                     left: 1%;
-                    .label {
+                    .number {
                         display: none;
                     }
                     .title {
-                        width: 90%;
+                        width: 85%;
                         .title_wrap {
                             > p {
                                 text-align: center;
@@ -351,7 +362,7 @@ main {
     main {
         .project {
             width: 95%;
-            border: 1px solid #e1e1e1;
+            border: none;
             .project_wrap {
                 .project_txt {
                     left: 0%;
