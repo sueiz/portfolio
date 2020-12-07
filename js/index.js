@@ -1,4 +1,4 @@
-$(function(){
+$(function () {
     var body = document.querySelector('body');
     var clickBtn = document.querySelector('.click_btn');
     var cursor = document.getElementById('cursor');
@@ -39,9 +39,5 @@ $(function(){
         setTimeout(function() {
             location.href = clickBtn.href;
         }, 500);
-
-
     });
-    
-
-})
+});

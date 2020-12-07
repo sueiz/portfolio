@@ -1,10 +1,15 @@
 body {
-    overflow: hidden;
+    -ms-overflow-style:none;
+    &.active {
+        overflow: hidden;
+    }
 }
+body::-webkit-scrollbar { display:none; }
 
 main {
     width: 100%;
     position: relative;
+    overflow: hidden;
     .project {
         width: 90%;
         height: 85vh;
@@ -259,7 +264,7 @@ main {
     main {
         .project {
             width: 95%;
-            border: none;
+            overflow: hidden;
             .project_wrap {
                 .project_txt {
                     left: 1%;
@@ -308,16 +313,19 @@ main {
     main {
         .project {
             width: 95%;
-            border: none;
             .project_wrap {
                 .project_txt {
-                    // display: block;
                     left: 1%;
                     .number {
                         display: none;
                     }
+                    .label {
+                        position: absolute;
+                        left: 10%; top: -70%;
+                    }
                     .title {
-                        width: 85%;
+                        width: 100%;
+                        margin: 0 auto;
                         .title_wrap {
                             > p {
                                 text-align: center;
@@ -362,15 +370,12 @@ main {
     main {
         .project {
             width: 95%;
-            border: none;
             .project_wrap {
                 .project_txt {
                     left: 0%;
-                    .number {
-                        display: none;
-                    }
                     .label {
-                        display: none;
+                        position: absolute;
+                        left: 10%; top: -100%;
                     }
                     .title {
                         width: 100%;

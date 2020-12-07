@@ -193,7 +193,7 @@ main {
                 position: relative;
                 animation: show 1s forwards;
                 z-index: -1;
-                margin: 15vh auto;
+                margin: 15vh auto 0;
                 h2 {
                     @extend %aboutTit;
                     transform: translateX(-500px);
@@ -220,16 +220,23 @@ main {
                         animation: show 1s forwards;
                         animation-delay: 1.8s;
                         }
-                        dl {
-                            div {
-                                span {
-                                    display: inline-block;
-                                    width: 7px; height: 7px;
-                                    background: #ff3636;
-                                    border-radius: 50%;
-                                    margin-right: .5rem;
+                        /* span */
+                        &:nth-of-type(3), &:nth-of-type(4), &:nth-of-type(5) {
+                            dl {
+                                dt {
+                                    div {
+                                        span {
+                                            &:nth-of-type(5) {
+                                                background: #fff;
+                                                border: 1px solid #ff3636;
+                                            }
+                                        }
+                                    }
                                 }
                             }
+                            
+                        }
+                        dl {
                             dt {
                                 @extend %dt;
                                 div {
@@ -316,6 +323,7 @@ main {
 @media (max-width: 1024px) {
     main {
         .about_wrap {
+            width: 95%;
             .line {
                 div {
                     border: none;
@@ -343,8 +351,7 @@ main {
     }
     main {
         .about_wrap {
-            width: 100%;
-            border: none;
+            width: 95%;
             height: auto;
             overflow: visible;
             .line {
@@ -374,15 +381,8 @@ main {
                         width: 100%;
                         margin: 0 0 0 10vw;
                         li {
-                            
                             dl {
                                 margin: 0 auto;
-                                dt {
-                                    // text-align: center;
-                                    dd {
-
-                                    }
-                                }
                             }
                         }
                     }
@@ -398,7 +398,7 @@ main {
     }
     main {
         .about_wrap {
-            width: 100%;
+            width: 95%;
             height: auto;
             overflow: visible;
             .line {
@@ -410,7 +410,6 @@ main {
                     display: none;
                 }
                 .introduce {
-                    margin-left: 1rem;
                     margin-top: 5vh;
                 }
                 .skills {

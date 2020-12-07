@@ -3,10 +3,11 @@ $(function () {
     //project_json.js
     
     $.ajax({
-        url: '/project.json',
+        url: 'project.json',
         type: 'get',
         success: function (data) {
             localStorage.page = 'list';
+            console.log('성공')
 
             var num, tit, des, topTitle, topImg, url, bodyTitle, description, period, role, sitemap, responsive, language, solution, vdo, mockupImg = '';
             var number = '',
@@ -44,7 +45,7 @@ $(function () {
                     mockupImg = value.mockupImg;
 
                     /* 프로젝트 리스트*/
-                    tag = "<a href='#' data-num="+ key +"><h2 class="+ bodyTitle +">"+topTitle +"";
+                    tag = "<a href='#' data-num="+ key +"><h2 class="+ bodyTitle +">"+ tit +"";
                     tag += "<img src='"+topImg+"' alt="+bodyTitle+">"
                     tag += "</h2></a>"
                     $('.project_title').append(tag);
@@ -54,11 +55,11 @@ $(function () {
                         e.preventDefault();
                         idx = $(this).index();
                         localStorage.pageNum = $(this).attr('data-num');
-                        location.href = 'project.php';
+                        location.href = 'project.html';
                     });
     
-                    /* work.php */
-                    if (window.location.pathname == '/work.php'){
+                    /* work.html */
+                    if (window.location.pathname == '/work.html'){
                         number += "<mark>" + num + "</mark>";
 
                         label += "<div>";
@@ -74,8 +75,8 @@ $(function () {
                         
                     }
 
-                    /* project.php */
-                    if(key == pageNum && location.pathname == '/project.php'){
+                    /* project.html */
+                    if(key == pageNum && location.pathname == '/project.html'){
                         localStorage.page = 'detail';
 
                          /* 배열 */
@@ -158,11 +159,10 @@ $(function () {
 
                 //list or detail page
                 if(localStorage.page == 'list'){
-                    // window.addEventListener('mousewheel',swift);
                     $('.project_wrap').on('click', function(e){
                         e.preventDefault();
                         localStorage.pageNum = Math.abs(i);
-                        location.href = 'project.php';
+                        location.href = 'project.html';
                     });
 
                     /* 반응형 */
@@ -185,13 +185,12 @@ $(function () {
                     }
                     res(mq);
 
-                    
                 }else if(localStorage.page == 'detail'){
                     window.addEventListener('mousewheel',textMove);
                     window.addEventListener('DOMMouseScroll',textMove);
                 }
 
-                /* 모바일 or PC 구분 */
+                /* work.php 모바일 or PC 구분 */
                 function workRes() {
                     if (resMsg == 'mobile') {
                         window.addEventListener('touchstart', tStart);
@@ -207,7 +206,6 @@ $(function () {
                 var mEvent = { y: 0, y2: 0, state: '' };
                 function tStart(e) {
                     mEvent.y = e.changedTouches[0].clientY;
-                    console.log(mEvent);
                 }
                 function tMove(e) {
                     mEvent.y2 = e.changedTouches[0].clientY;
@@ -230,10 +228,6 @@ $(function () {
                     if(e.wheelDelta > 0 || e.detail < 0){
                         //up
                         if (i >= 0){
-                            // projectMove.style.transform = "translateY(0%)";
-                            // txtMove.style.transform = "translateY(0)"
-                            // titMove.style.transform = "translateY(0%)"
-                            // labelMove.style.transform = "translateY(0)"
                             return;
                         }
                         i++;
@@ -252,23 +246,23 @@ $(function () {
 
                 function workMove(){
                     var a = i * 100;
-                        var b = i * 15;
-                        var d = i * 26;
-                        projectMove.style.transform = "translateY(" + a + "%)";
-                        txtMove.style.transform = "translateY("+ b +"px)";
-                        titMove.style.transform = "translateY("+ a +"%)";
-                        labelMove.classList.remove('active');
+                    var b = i * 15;
+                    var d = i * 26;
+                    projectMove.style.transform = "translateY(" + a + "%)";
+                    txtMove.style.transform = "translateY("+ b +"px)";
+                    titMove.style.transform = "translateY("+ a +"%)";
+                    labelMove.classList.remove('active');
+                    setTimeout(function(){
+                        labelMove.classList.add('active');
                         setTimeout(function(){
-                            labelMove.classList.add('active');
-                            setTimeout(function(){
-                                labelMove.style = "opacity:1;transition:opacity 1s;transform:translateY("+ d +"px)";
-                            },500);
-                        },10);
+                            labelMove.style = "opacity:1;transition:opacity 1s;transform:translateY("+ d +"px)";
+                        },500);
+                    },10);
                 }
 
                 function textMove(e) {
                     if(bln) return;
-            
+                    
                     if(e.wheelDelta > 0 || e.detail < 0){
                         //up
                         if(i >= 0) {
@@ -276,8 +270,8 @@ $(function () {
                             return;
                         }
                         i++;
-                        a = 300 + (i * 60);
-                        b = i * 1;
+                        var a = 300 + (i * 60);
+                        var b = i * 1;
                         txt.style.transform = "translateX(" + a + "px)";
                         img.style.transform = "rotate(" + b + "deg)";
                     }else if (e.wheelDelta < 0 || e.detail > 0){
@@ -299,4 +293,4 @@ $(function () {
         }
     });
     //end    
-})
+});

@@ -1,10 +1,19 @@
 body {
+  -ms-overflow-style: none;
+}
+
+body.active {
   overflow: hidden;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 main {
   width: 100%;
   position: relative;
+  overflow: hidden;
 }
 
 main .project {
@@ -323,7 +332,7 @@ main .project .project_wrap .project_img .img_wrap div img {
 @media (max-width: 1024px) {
   main .project {
     width: 95%;
-    border: none;
+    overflow: hidden;
   }
   main .project .project_wrap .project_txt {
     left: 1%;
@@ -363,7 +372,6 @@ main .project .project_wrap .project_img .img_wrap div img {
 @media (max-width: 768px) {
   main .project {
     width: 95%;
-    border: none;
   }
   main .project .project_wrap .project_txt {
     left: 1%;
@@ -371,8 +379,14 @@ main .project .project_wrap .project_img .img_wrap div img {
   main .project .project_wrap .project_txt .number {
     display: none;
   }
+  main .project .project_wrap .project_txt .label {
+    position: absolute;
+    left: 10%;
+    top: -70%;
+  }
   main .project .project_wrap .project_txt .title {
-    width: 85%;
+    width: 100%;
+    margin: 0 auto;
   }
   main .project .project_wrap .project_txt .title .title_wrap > p {
     text-align: center;
@@ -409,16 +423,14 @@ main .project .project_wrap .project_img .img_wrap div img {
 @media (max-width: 480px) {
   main .project {
     width: 95%;
-    border: none;
   }
   main .project .project_wrap .project_txt {
     left: 0%;
   }
-  main .project .project_wrap .project_txt .number {
-    display: none;
-  }
   main .project .project_wrap .project_txt .label {
-    display: none;
+    position: absolute;
+    left: 10%;
+    top: -100%;
   }
   main .project .project_wrap .project_txt .title {
     width: 100%;

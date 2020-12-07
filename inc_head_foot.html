@@ -9,108 +9,77 @@
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="js/common.js"></script>
+    <script src="js/project_json.js"></script>
 </head>
 <body>
-<header>
-    <div>
-        <div class="headerLeft">
-            <a href='/portfolio/index.html' class="logo header_eng">SUJIN JEONG</a>
-            <nav class="gnb">
-                <ul>
-                    <li><a href='/portfolio/work.html' class="header_eng">Work</a></li>
-                    <li><a href='/portfolio/about.html' class="header_eng">About</a></li>
-                    <li><a href='#' class="header_eng">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-        
-        <a href='#' class="menu-trigger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </a>
-
-        <div class="back_btn">
-            <a href='#'>BACK</a>
-        </div>
-    </div>
-</header>
-
-<div class="slide_menu">
-    <div class="inner">
-        <ul>
-            <li><a href='/portfolio/work.html' class="menu_eng">Work.<h4>(AND PLAY)</h4></a></li>
-            <li><a href='/portfolio/about.html' class="menu_eng">About.<h4>JEONGSUJIN</h4></a></li>
-            <li><a href='#' class="menu_eng">Contact.<h4>I'D LOVE TO HEAR FROM YOU</h4></a></li>
-        </ul>
-        <a href='#' class="close_btn">
-            <span></span>
-            <span></span>
-        </a>
-    </div>
-</div>
-
-<a href='#' class="project_list">
-    <div class="btn">
-        <span></span>
-        <p class="listBtn">PROJECT LIST</p>
-    </div>
-</a>
-
-<div class="projects_wrap">
-    <div class="projects">
-        <div class="project_title">
-            <a href='/portfolio/project/krispykreme.html'><h2 class="krispy title_eng">KRISPY KREME DOUGHNUT
-                <img src="/portfolio/img/project_krispy.jpg" alt="krispy">
-            </h2></a>
-            <a href='/portfolio/project/yuhankimberly.html'><h2 class="yk title_eng">YUHAN KIMBERLY
-                <img src="/portfolio/img/project_yuhankimberly.jpg" alt="yuhankimberly">
-            </h2></a>
-            <a href='/portfolio/project/athomeworkouts.html'><h2 class="ahw title_eng">AT HOME WORKOUTS
-                <img src="/portfolio/img/project_workouts.jpg" alt="athomeworkouts">
-            </h2></a>
-        </div>
-    </div>
-</div>
-
-<div class="popup_contact">
-    <div class="popup_wrap">
-        <div class="contact">
-            <div class="inner">
-                <div class="contact_top">
-                    <h2>LET'S MAKE SOMETHING</h2>
-                </div>
-                <div class="contact_body">
-                    <div class="profile">
-                        <h2>Jeong Sujin</h2>
-                        <p>010. 9060. 0771</p>
-                        <p>sueiz0770@gmail.com</p>
-                        <a href='https://github.com/sueiz' target="_black">https://github.com/sueiz</a>
-                    </div>
-                    <form action="/portfolio/php/contact_request.php" method="">
-                        <table>
-                            <tr><td><input type="text" name="name" placeholder="Your Name"></td></tr>
-                            <tr><td><input type="email" name="email" placeholder="Your Mail"></td></tr>
-                            <tr><td><input type="phone" name="phone" placeholder="Your Number"></td></tr>
-                            <tr><td><textarea name="message" placeholder="Message"></textarea></td></tr>
-                            <tr>
-                                <td>
-                                    <input type="submit" value="SEND">
-                                </td>
-                            </tr>
-                        </table>
-                    </form>
-                </div>
+    <header>
+        <div>
+            <div class="headerLeft">
+                <a href='/index.html' class="logo header_eng">SUJIN JEONG</a>
+                <nav class="gnb">
+                    <ul>
+                        <li><a href='/work.html' class="header_eng">Work</a></li>
+                        <li><a href='/about.html' class="header_eng">About</a></li>
+                        <li><a href='#' class="header_eng">Contact</a></li>
+                    </ul>
+                </nav>
             </div>
-            <a href='#' class="popup_close">
+            
+            <a href='#' class="menu-trigger">
+                <span></span>
                 <span></span>
                 <span></span>
             </a>
+    
+            <div class="back_btn">
+                <a href='#'>BACK</a>
+            </div>
+        </div>
+    
+        <div class="slide_menu">
+            <div class="inner">
+                <ul>
+                    <li><a href='/work.html' class="menu_eng">Work.<h4>(AND PLAY)</h4></a></li>
+                    <li><a href='/about.html' class="menu_eng">About.<h4>JEONGSUJIN</h4></a></li>
+                    <li><a href='#' class="menu_eng">Contact.<h4>I'D LOVE TO HEAR FROM YOU</h4></a></li>
+                </ul>
+                <a href='#' class="close_btn">
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <a href='#' class="project_list">
+        <div class="btn">
+            <span></span>
+            <p class="listBtn">PROJECT LIST</p>
+        </div>
+    </a>
+
+    <div class="popup_contact">
+        <div class="popup_wrap">
+            <div class="contact">
+                <div class="inner">
+                    <div class="contact_top">
+                        <h2>LET'S MAKE SOMETHING.</h2>
+                        <p>궁금한 점이 있으시면 연락 부탁드립니다. :)</p>
+                    </div>
+                    <div class="contact_body">
+                        <ul class="profile">
+                            <li class="name"><span></span><p>Jeong Sujin</p></li>
+                            <li class="email"><span></span><p>sueiz0770@gmail.com</p></li>
+                        </ul>
+                    </div>
+                </div>
+                <a href='#' class="popup_close">
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
         </div>
     </div>
-    
-    
-</div>
 
 </body>
 </html>

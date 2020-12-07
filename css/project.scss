@@ -6,20 +6,11 @@ body {
 }
 body::-webkit-scrollbar { display:none; }
 header {
-    position: fixed;
-    top: 0; left: 0;
-    z-index: 999;
     div {
         .headerLeft {
             .logo {
                 color: #333;
             }
-        }
-        .menu-trigger {
-            display: none;
-        }
-        .back_btn {
-            display: none;
         }
     }
 }
@@ -28,7 +19,6 @@ main {
     width: 100%;
     overflow: hidden;
     position: relative;
-    margin-top: 70px;
     .project_wrap {
         width: 100%;
         .top {
@@ -104,13 +94,13 @@ main {
                         vertical-align: middle;
                         width: 20%;
                         font-family: 'Montserrat', sans-serif;
-                        font-size: .8em;
+                        font-size: .9em;
                         font-weight: 400;
                     }
                     p {
                         display: table-cell;
                         width: 80%;
-                        font-size: .8em;
+                        font-size: .9em;
                         line-height: 1.5;
                     }
                 }
@@ -123,7 +113,7 @@ main {
                             margin-right: 2rem;
                             border: 1px solid #e9e9eb;
                             padding: .5rem 1rem;
-                            font-size: .8em;
+                            font-size: .9em;
                             margin-bottom: .5rem;
                         }
                     }
@@ -134,12 +124,12 @@ main {
                             color: #ff3636;
                             line-height: 1.5;
                             font-family: 'Montserrat', sans-serif;
-                            font-size: .8em;
+                            font-size: .9em;
                             font-weight: 500;
                             margin-bottom: .5rem;
                         }
                         dd {
-                            font-size: .8em;
+                            font-size: .9em;
                             line-height: 1.5;
                             margin-bottom: 1rem;}
                     }
@@ -180,7 +170,7 @@ main {
                     }
                 }
                 .rotate_img {
-                    width: 30%;
+                    width: 20%;
                     img {
                         width: 100%;
                     }
@@ -196,6 +186,7 @@ main {
 }
 
 @media (max-width: 768px) {
+
     main {
         .project_wrap {
             .top {
@@ -205,10 +196,13 @@ main {
                     }
                 }
                 .rotate_img {
-                    width: 25%;
+                    width: 20%;
                     img {
                         width: 100%;
                     }
+                }
+                .project_list {
+                    left: 2%; bottom: 10%;
                 }
             }
             .body {
@@ -219,10 +213,12 @@ main {
                         margin-bottom: 2rem;
                         h3 {
                             display: block;
-                            margin-bottom: 1rem;
+                            margin-bottom: 1rem; 
+                            width: 100%;
                         }
                         p, ul {
                             display: block;
+                            width: 100%;
                             li {
                                 margin-bottom: .5rem;
                             }
@@ -239,7 +235,6 @@ main {
     main {
         .project_wrap {
             .top {
-                height: 100vh;
                 .scrolling_text {
                     vertical-align: top;
                     h1 {
@@ -247,7 +242,6 @@ main {
                     }
                 }
                 .rotate_img {
-                    width: 25%;
                     left: 50vw; top: 35%;
                     transform: translate(-50%, -35%);
                     img {
@@ -267,11 +261,14 @@ main {
                     }
                     div {
                         margin-bottom: 2rem;
+                        p {
+                            width: 100%;
+                        }
                     }
                     .sitemap, .responsive, .language {
                         ul {
                             display: table-cell;
-                            width: 80%;
+                            width: 100%;
                             li {
                                 display: inline-block;
                                 margin-right: 1rem;

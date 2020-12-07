@@ -288,7 +288,7 @@ main .about_wrap .inner .skills {
   -webkit-animation: show 1s forwards;
           animation: show 1s forwards;
   z-index: -1;
-  margin: 15vh auto;
+  margin: 15vh auto 0;
 }
 
 main .about_wrap .inner .skills h2 {
@@ -309,6 +309,7 @@ main .about_wrap .inner .skills ul li {
   display: inline-block;
   margin-right: 10%;
   vertical-align: top;
+  /* span */
 }
 
 main .about_wrap .inner .skills ul li:nth-of-type(1), main .about_wrap .inner .skills ul li:nth-of-type(3), main .about_wrap .inner .skills ul li:nth-of-type(5) {
@@ -330,13 +331,9 @@ main .about_wrap .inner .skills ul li:nth-of-type(2n) {
           animation-delay: 1.8s;
 }
 
-main .about_wrap .inner .skills ul li dl div span {
-  display: inline-block;
-  width: 7px;
-  height: 7px;
-  background: #ff3636;
-  border-radius: 50%;
-  margin-right: .5rem;
+main .about_wrap .inner .skills ul li:nth-of-type(3) dl dt div span:nth-of-type(5), main .about_wrap .inner .skills ul li:nth-of-type(4) dl dt div span:nth-of-type(5), main .about_wrap .inner .skills ul li:nth-of-type(5) dl dt div span:nth-of-type(5) {
+  background: #fff;
+  border: 1px solid #ff3636;
 }
 
 main .about_wrap .inner .skills ul li dl dt div {
@@ -416,6 +413,9 @@ main .about_wrap .line div:nth-of-type(6) {
 }
 
 @media (max-width: 1024px) {
+  main .about_wrap {
+    width: 95%;
+  }
   main .about_wrap .line div {
     border: none;
   }
@@ -435,8 +435,7 @@ main .about_wrap .line div:nth-of-type(6) {
     overflow: visible;
   }
   main .about_wrap {
-    width: 100%;
-    border: none;
+    width: 95%;
     height: auto;
     overflow: visible;
   }
@@ -479,7 +478,7 @@ main .about_wrap .line div:nth-of-type(6) {
     overflow: visible;
   }
   main .about_wrap {
-    width: 100%;
+    width: 95%;
     height: auto;
     overflow: visible;
   }
@@ -493,7 +492,6 @@ main .about_wrap .line div:nth-of-type(6) {
     display: none;
   }
   main .about_wrap .inner .introduce {
-    margin-left: 1rem;
     margin-top: 5vh;
   }
   main .about_wrap .inner .skills {

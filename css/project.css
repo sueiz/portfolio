@@ -10,30 +10,14 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 999;
-}
-
 header div .headerLeft .logo {
   color: #333;
-}
-
-header div .menu-trigger {
-  display: none;
-}
-
-header div .back_btn {
-  display: none;
 }
 
 main {
   width: 100%;
   overflow: hidden;
   position: relative;
-  margin-top: 70px;
 }
 
 main .project_wrap {
@@ -139,14 +123,14 @@ main .project_wrap .body .content div h3 {
   vertical-align: middle;
   width: 20%;
   font-family: 'Montserrat', sans-serif;
-  font-size: .8em;
+  font-size: .9em;
   font-weight: 400;
 }
 
 main .project_wrap .body .content div p {
   display: table-cell;
   width: 80%;
-  font-size: .8em;
+  font-size: .9em;
   line-height: 1.5;
 }
 
@@ -160,7 +144,7 @@ main .project_wrap .body .content .sitemap ul li, main .project_wrap .body .cont
   margin-right: 2rem;
   border: 1px solid #e9e9eb;
   padding: .5rem 1rem;
-  font-size: .8em;
+  font-size: .9em;
   margin-bottom: .5rem;
 }
 
@@ -168,13 +152,13 @@ main .project_wrap .body .content .solution dl dt {
   color: #ff3636;
   line-height: 1.5;
   font-family: 'Montserrat', sans-serif;
-  font-size: .8em;
+  font-size: .9em;
   font-weight: 500;
   margin-bottom: .5rem;
 }
 
 main .project_wrap .body .content .solution dl dd {
-  font-size: .8em;
+  font-size: .9em;
   line-height: 1.5;
   margin-bottom: 1rem;
 }
@@ -210,7 +194,7 @@ main .project_wrap .body .content .mockup img {
     font-size: 12em;
   }
   main .project_wrap .top .rotate_img {
-    width: 30%;
+    width: 20%;
   }
   main .project_wrap .top .rotate_img img {
     width: 100%;
@@ -225,10 +209,14 @@ main .project_wrap .body .content .mockup img {
     font-size: 12em;
   }
   main .project_wrap .top .rotate_img {
-    width: 25%;
+    width: 20%;
   }
   main .project_wrap .top .rotate_img img {
     width: 100%;
+  }
+  main .project_wrap .top .project_list {
+    left: 2%;
+    bottom: 10%;
   }
   main .project_wrap .body .content {
     width: 90%;
@@ -240,9 +228,11 @@ main .project_wrap .body .content .mockup img {
   main .project_wrap .body .content div h3 {
     display: block;
     margin-bottom: 1rem;
+    width: 100%;
   }
   main .project_wrap .body .content div p, main .project_wrap .body .content div ul {
     display: block;
+    width: 100%;
   }
   main .project_wrap .body .content div p li, main .project_wrap .body .content div ul li {
     margin-bottom: .5rem;
@@ -250,9 +240,6 @@ main .project_wrap .body .content .mockup img {
 }
 
 @media (max-width: 480px) {
-  main .project_wrap .top {
-    height: 100vh;
-  }
   main .project_wrap .top .scrolling_text {
     vertical-align: top;
   }
@@ -260,7 +247,6 @@ main .project_wrap .body .content .mockup img {
     font-size: 8em;
   }
   main .project_wrap .top .rotate_img {
-    width: 25%;
     left: 50vw;
     top: 35%;
     -webkit-transform: translate(-50%, -35%);
@@ -282,9 +268,12 @@ main .project_wrap .body .content .mockup img {
   main .project_wrap .body .content div {
     margin-bottom: 2rem;
   }
+  main .project_wrap .body .content div p {
+    width: 100%;
+  }
   main .project_wrap .body .content .sitemap ul, main .project_wrap .body .content .responsive ul, main .project_wrap .body .content .language ul {
     display: table-cell;
-    width: 80%;
+    width: 100%;
   }
   main .project_wrap .body .content .sitemap ul li, main .project_wrap .body .content .responsive ul li, main .project_wrap .body .content .language ul li {
     display: inline-block;
