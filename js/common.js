@@ -1,10 +1,10 @@
 $(function () {
 //start    
-    $('header').load('/inc_head_foot.html header > div', header);
+    $('header').load('/portfolio/inc_head_foot.html header > div', header);
     //$('.slide_menu').load('/inc_head_foot.php .slide_menu > .inner', slideMenu);
 
     $.ajax({
-        url: '/inc_head_foot.html',
+        url: '/portfolio/inc_head_foot.html',
         success: function (data) {
             $('.projects_wrap').prepend($(data).find('.projects'));
             $('.project_list').prepend($(data).find('.btn'));
@@ -61,7 +61,7 @@ $(function () {
             $('.logo').addClass('active');
             $('.gnb ul li').addClass('active');
             // $('body').css({'height':'100%','overflow-y':'hidden'});
-            if (window.location.pathname == '/work.html') {
+            if (window.location.pathname == '/portfolio/work.html') {
                 $('.back_btn').css('display','block');
             }else{
                 $('.back_btn').css('display','block');
@@ -73,7 +73,7 @@ $(function () {
             $('.projects_wrap').css('left','-100%');
             $('.logo').removeClass('active');
             $('.gnb ul li').removeClass('active');
-            if (window.location.pathname == '/work.html') {
+            if (window.location.pathname == '/portfolio/work.html') {
                 $('.back_btn').css('display','none');
             }else{
                 $('.back_btn').css('display','none');
@@ -83,17 +83,17 @@ $(function () {
 
         /* 버튼 배경색 */
         function btnColor() {
-            if (window.location.pathname == '/project.html' && localStorage.pageNum == '0') {
+            if (window.location.pathname == '/portfolio/project.html' && localStorage.pageNum == '0') {
                 $('.btn p').css('background','#e9e9eb');
-            }else if (window.location.pathname == '/project.html' && localStorage.pageNum == '1') {
+            }else if (window.location.pathname == '/portfolio/project.html' && localStorage.pageNum == '1') {
                 $('.btn p').css('background','#ffe081');
-            }else if (window.location.pathname == '/project.html' && localStorage.pageNum == '2') {
+            }else if (window.location.pathname == '/portfolio/project.html' && localStorage.pageNum == '2') {
                 $('.btn p').css('background','#E1DFD6');
             }
         }
         btnColor();
         function scrollColor(){
-            if (window.location.pathname == '/project.html') {
+            if (window.location.pathname == '/portfolio/project.html') {
                 $(window).on('scroll',function(){
                     var bodyTop = $('.project_wrap .body').offset().top;
                     var btnTop = $('.btn p').offset().top;

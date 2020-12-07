@@ -3,7 +3,7 @@ $(function () {
     //project_json.js
     
     $.ajax({
-        url: 'project.json',
+        url: '/portfolio/project.json',
         type: 'get',
         success: function (data) {
             localStorage.page = 'list';
@@ -55,11 +55,11 @@ $(function () {
                         e.preventDefault();
                         idx = $(this).index();
                         localStorage.pageNum = $(this).attr('data-num');
-                        location.href = 'project.html';
+                        location.href = '/portfolio/project.html';
                     });
     
                     /* work.html */
-                    if (window.location.pathname == '/work.html'){
+                    if (window.location.pathname == '/portfolio/work.html'){
                         number += "<mark>" + num + "</mark>";
 
                         label += "<div>";
@@ -76,7 +76,7 @@ $(function () {
                     }
 
                     /* project.html */
-                    if(key == pageNum && location.pathname == '/project.html'){
+                    if(key == pageNum && location.pathname == '/portfolio/project.html'){
                         localStorage.page = 'detail';
 
                          /* 배열 */
@@ -162,7 +162,7 @@ $(function () {
                     $('.project_wrap').on('click', function(e){
                         e.preventDefault();
                         localStorage.pageNum = Math.abs(i);
-                        location.href = 'project.html';
+                        location.href = '/portfolio/project.html';
                     });
 
                     /* 반응형 */
